@@ -1,0 +1,1441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NAVNEET TOPTECH Conclave | India's Educators' Event Across 50+ Cities</title>
+<meta name="description" content="Join 1,00,000+ teachers across 50+ cities at NAVNEET TOPTECH Conclave. Panel discussions, workshops, product demos, and NEP 2020 sessions. Register now!">
+<link rel="canonical" href="https://navneettoptech.com/conclaves">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#0A4B9B; --blue2:#2e3191; --blue3:#3a3eb8;
+  --green:#1b8a73; --green2:#03ad7e; --green3:#0f5e50;
+  --gold:#1b8a73; --teal:#008aa4;
+  --white:#ffffff; --off:#f7f8fd;
+  --light:#eef0fa; --border:#d4d7ef;
+  --muted:#5a5f8a; --dark:#12154a;
+  --fh:'Montserrat',sans-serif; --fb:'Inter',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--white);color:var(--blue2);line-height:1.6}
+.page{display:none}.page.active{display:block}
+
+/* ── NAV ── */
+nav{background:var(--white);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:68px;position:sticky;top:0;z-index:200;border-bottom:3px solid var(--blue);box-shadow:0 2px 20px rgba(46,49,145,.08)}
+.nav-logo{cursor:pointer;display:flex;align-items:center;height:44px}
+.nav-logo img{height:44px;width:auto;display:block}
+.nav-links{display:flex;list-style:none}
+.nav-links li{position:relative}
+.nav-links>li>a,.nav-links>li>span{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600;font-family:var(--fh);padding:0 15px;height:68px;display:flex;align-items:center;cursor:pointer;transition:color .2s,background .2s}
+.nav-links>li:hover>a,.nav-links>li:hover>span{color:var(--blue);background:var(--light)}
+.dropdown{display:none;position:absolute;top:68px;left:0;background:var(--white);min-width:200px;border-top:3px solid var(--green);padding:8px 0;box-shadow:0 8px 32px rgba(46,49,145,.12);z-index:300}
+.nav-links li:hover .dropdown{display:block}
+.dropdown a{display:block;padding:10px 20px;color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;transition:background .15s,color .15s;cursor:pointer}
+.dropdown a:hover{background:var(--light);color:var(--blue)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.nav-sup{color:var(--muted);font-size:12px;text-decoration:none;font-weight:500}
+.nav-cta{background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:13px;font-weight:700;padding:10px 22px;border-radius:6px;transition:background .2s}
+.nav-cta:hover{background:var(--blue2)}
+
+/* ── HERO ── */
+.hero{background:var(--blue);padding:72px 2.5rem 60px;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;min-height:500px}
+.hero-eyebrow{display:inline-block;background:rgba(245,182,31,.15);color:#f5b61f;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:1.25rem;border:1px solid rgba(245,182,31,.3);font-family:var(--fh)}
+.hero h1{font-family:var(--fh);font-size:40px;font-weight:800;line-height:1.18;color:var(--white);margin-bottom:1rem}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{color:rgba(255,255,255,.82);font-size:15px;line-height:1.75;margin-bottom:2rem}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-gold{background:var(--green);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:800;padding:13px 28px;border-radius:8px;transition:opacity .2s}
+.btn-gold:hover{opacity:.9}
+.btn-wh-outline{background:rgba(255,255,255,.12);color:var(--white);cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:600;padding:12px 22px;border-radius:8px;border:1.5px solid rgba(255,255,255,.45);display:flex;align-items:center;gap:8px;transition:background .2s}
+.btn-wh-outline:hover{background:rgba(255,255,255,.2)}
+.play-ring{width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.play-ring::after{content:'';border-left:9px solid #fff;border-top:5.5px solid transparent;border-bottom:5.5px solid transparent;margin-left:2px}
+.hero-video{background:rgba(255,255,255,.08);border:1.5px dashed rgba(255,255,255,.3);border-radius:16px;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;cursor:pointer;position:relative;overflow:hidden;transition:background .2s}
+.hero-video:hover{background:rgba(255,255,255,.14)}
+.vplay{width:60px;height:60px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.vplay::after{content:'';border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:4px}
+.vplay-sm{width:42px;height:42px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.vplay-sm::after{content:'';border-left:15px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:3px}
+.vbadge{position:absolute;top:12px;right:12px;background:#0A4B9B;color:var(--white);font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:4px 10px;border-radius:20px}
+.vlabel{color:rgba(255,255,255,.7);font-size:13px;font-weight:500;text-align:center;padding:0 1.5rem}
+.vcat{position:absolute;top:10px;left:10px;background:rgba(245,182,31,.15);color:#f5b61f;font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:3px 9px;border-radius:12px;border:1px solid rgba(245,182,31,.3)}
+
+/* ── STATS BAR ── */
+     /* ── STATS BAR ── */
+.stats-bar {
+    background: var(--blue);
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+@media (max-width: 768px) {
+    .stats-bar {
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+    }
+
+    .stats-bar::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 1px;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .stats-bar::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.2);
+    }
+}
+
+.stat-item{padding:22px 1.5rem;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:var(--fh);font-size:28px;font-weight:800;color:#f5b61f}
+.stat-label{font-size:12px;color:rgba(255,255,255,.6);margin-top:3px;font-weight:500}
+
+/* ── SECTION BASE ── */
+.sec{padding:72px 2.5rem}
+.sec-white{background:var(--white)}
+.sec-light{background:var(--light)}
+.sec-blue{background:var(--blue)}
+.sec-dark{background:var(--blue2)}
+.sec-green{background:var(--green)}
+.sec-tag{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.sec-tag-gold{color:#f5b61f}
+.sec-title{font-family:var(--fh);font-size:32px;font-weight:800;line-height:1.22;color:var(--blue2);margin-bottom:.9rem}
+.sec-title-wh{color:var(--white)}
+.sec-sub{color:var(--muted);font-size:15px;line-height:1.72;max-width:600px;margin-bottom:2rem}
+.sec-sub-wh{color:rgba(255,255,255,.75)}
+.sec-hrow{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;gap:1rem}
+.link-more{font-size:13px;font-weight:700;color:var(--green);text-decoration:none;cursor:pointer;font-family:var(--fh);white-space:nowrap}
+
+/* ── GRIDS ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.g2-1{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem}
+
+/* ── PRODUCT CARDS ── */
+.pcard{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
+.pcard:hover{box-shadow:0 8px 32px rgba(46,49,145,.1);transform:translateY(-3px)}
+.pcard-top-stripe{height:4px;border-radius:4px 4px 0 0;margin:-1.5rem -1.5rem 1.25rem}
+.pcard-logo{height:36px;margin-bottom:.75rem;display:flex;align-items:center}
+.pcard-logo-text{font-family:var(--fh);font-size:18px;font-weight:800}
+.pcard-logo-text span{color:var(--green)}
+.pcard-outcome{font-size:12px;font-weight:700;color:var(--green);margin-bottom:.4rem;display:flex;align-items:center;gap:5px;font-family:var(--fh)}
+.pcard-outcome::before{content:'↑';font-size:13px}
+.pcard-name{font-family:var(--fh);font-size:16px;font-weight:800;color:var(--blue);margin-bottom:.4rem}
+.pcard-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:.75rem;font-family:var(--fh)}
+.pcard-desc{font-size:13px;color:var(--muted);line-height:1.65;flex:1}
+.pcard-link{display:inline-flex;align-items:center;gap:5px;margin-top:14px;font-size:13px;font-weight:700;color:var(--blue);cursor:pointer;font-family:var(--fh)}
+.pcard-link:hover{color:var(--green)}
+
+/* ── FEATURE CARDS ── */
+.fcard{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border)}
+.fcard-dark{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.5rem}
+.fcard-icon{font-size:26px;margin-bottom:10px}
+.fcard-name{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:5px}
+.fcard-name-wh{color:var(--white)}
+.fcard-desc{font-size:13px;color:var(--muted);line-height:1.65}
+.fcard-desc-wh{font-size:13px;color:rgba(255,255,255,.65);line-height:1.65}
+
+/* ── TESTIMONIALS ── */
+.tcard{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border)}
+.tcard-dark{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.5rem}
+.qmark{font-size:38px;color:var(--gold);line-height:1;margin-bottom:6px;font-family:Georgia,serif}
+.qtext{font-size:14px;color:#3a3d6e;line-height:1.72;margin-bottom:1rem;font-style:italic}
+.qtext-wh{font-size:14px;color:rgba(255,255,255,.78);line-height:1.72;margin-bottom:1rem;font-style:italic}
+.qauthor{font-weight:700;font-size:13px;color:var(--blue2);font-family:var(--fh)}
+.qauthor-wh{font-weight:700;font-size:13px;color:var(--white);font-family:var(--fh)}
+.qschool{font-size:12px;color:var(--muted)}
+.qschool-wh{font-size:12px;color:rgba(255,255,255,.5)}
+
+/* ── NEWS ── */
+.ncard{border-radius:14px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s}
+.ncard:hover{box-shadow:0 6px 24px rgba(46,49,145,.1)}
+.nimg{aspect-ratio:16/9;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border);position:relative}
+.nbadge{position:absolute;bottom:10px;left:10px;background:var(--blue);color:var(--white);font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px}
+.nbody{padding:1.25rem}
+.ntitle{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);line-height:1.5;margin-bottom:6px}
+.ndate{font-size:12px;color:var(--muted)}
+
+/* ── AWARDS ── */
+.award-card{background:var(--light);border-radius:12px;padding:1.25rem;border:1px solid var(--border);text-align:center}
+.award-icon{font-size:28px;margin-bottom:10px}
+.award-name{font-size:13px;font-weight:700;color:var(--blue2);margin-bottom:4px;font-family:var(--fh);line-height:1.4}
+.award-org{font-size:11px;color:var(--muted)}
+
+/* ── CTA STRIP ── */
+.cta-strip{background:var(--blue);padding:56px 2.5rem;text-align:center}
+.cta-strip h2{font-family:var(--fh);font-size:30px;font-weight:800;color:var(--white);margin-bottom:.7rem}
+.cta-strip p{color:rgba(255,255,255,.82);font-size:15px;margin-bottom:1.75rem}
+.cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn-wh{background:var(--white);color:var(--blue);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:800;padding:13px 28px;border-radius:8px;transition:opacity .2s}
+.btn-wh:hover{opacity:.9}
+.btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.45);cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:600;padding:11px 24px;border-radius:8px}
+
+/* ── BUTTONS ── */
+.btn-blue{background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:700;padding:13px 28px;border-radius:8px;transition:background .2s}
+.btn-blue:hover{background:var(--blue2)}
+.btn-green{background:var(--green);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:700;padding:13px 28px;border-radius:8px;transition:background .2s}
+.btn-green:hover{background:var(--green3)}
+.btn-outline-blue{background:transparent;color:var(--blue);border:2px solid var(--blue);cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:600;padding:11px 24px;border-radius:8px;transition:all .2s;display:flex;align-items:center;gap:8px}
+.btn-outline-blue:hover{background:var(--blue);color:var(--white)}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{background:var(--blue);padding:10px 2.5rem;display:flex;align-items:center;gap:6px}
+.breadcrumb span{font-size:12px;color:rgba(255,255,255,.4)}
+.breadcrumb a{font-size:12px;color:rgba(255,255,255,.65);text-decoration:none;cursor:pointer;font-weight:500}
+.breadcrumb a:hover{color:var(--white)}
+
+/* ── PAGE HERO ── */
+.page-hero{background:var(--blue);padding:64px 2.5rem}
+.page-hero-tag{display:inline-block;background:rgba(245,182,31,.15);color:#f5b61f;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:1rem;border:1px solid rgba(245,182,31,.3);font-family:var(--fh)}
+.page-hero h1{font-family:var(--fh);font-size:36px;font-weight:800;color:var(--white);line-height:1.2;margin-bottom:.8rem;max-width:660px}
+.page-hero p{color:rgba(255,255,255,.78);font-size:15px;line-height:1.72;max-width:580px;margin-bottom:1.75rem}
+
+/* ── PRODUCT PAGE LOGO ── */
+.prod-logo-hero{height:52px;width:auto;margin-bottom:1.25rem;filter:brightness(0) invert(1)}
+
+/* ── FAQ ── */
+.faq-item{border-bottom:1px solid var(--border);padding:1rem 0;cursor:pointer}
+.faq-q{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-a{font-size:13px;color:var(--muted);line-height:1.7;margin-top:8px;display:none}
+.faq-item.open .faq-a{display:block}
+.faq-chev{font-size:18px;color:var(--green);transition:transform .2s;flex-shrink:0}
+.faq-item.open .faq-chev{transform:rotate(45deg)}
+
+/* ── TABS ── */
+.cur-tabs{display:flex;gap:8px;margin-bottom:1.5rem;flex-wrap:wrap}
+.cur-tab{font-size:13px;font-weight:600;font-family:var(--fh);padding:7px 18px;border-radius:8px;border:1.5px solid var(--border);background:var(--white);color:var(--muted);cursor:pointer;transition:all .2s}
+.cur-tab.active{background:var(--blue);color:var(--white);border-color:var(--blue)}
+.cur-panel{display:none}.cur-panel.active{display:block}
+.cur-table{width:100%;border-collapse:collapse;font-size:13px}
+.cur-table th{background:var(--blue);color:var(--white);padding:10px 14px;text-align:left;font-weight:700;font-family:var(--fh)}
+.cur-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--muted)}
+.cur-table tr:nth-child(even) td{background:var(--light)}
+
+/* ── PHOTO SCROLLER ── */
+.photo-scroller{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 10px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.photo-scroller::-webkit-scrollbar{height:6px}
+.photo-scroller::-webkit-scrollbar-thumb{background:var(--border);border-radius:10px}
+.photo-scroller>*{flex:0 0 200px;scroll-snap-align:start}
+.photo-scroller img{width:100%;height:150px;object-fit:cover;border-radius:10px;display:block}
+.photo-slot-add{height:150px;border-radius:10px;border:2px dashed var(--border);background:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--muted);font-size:11px;text-align:center;padding:.5rem}
+.photo-slot-add span{font-size:20px;color:var(--border)}
+
+/* ── BENEFIT ROWS ── */
+.benefit-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem}
+.benefit-row.flip{direction:rtl}
+.benefit-row.flip>*{direction:ltr}
+.benefit-img{background:var(--blue2);border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:60px;gap:12px}
+.benefit-img span{font-family:var(--fh);font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-align:center;padding:0 1.5rem}
+.check-list{list-style:none;margin-top:.75rem}
+.check-list li{font-size:14px;color:var(--blue2);padding:5px 0 5px 26px;position:relative;line-height:1.5}
+.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:800}
+
+/* ── CONTACT FORM ── */
+.form-box{background:var(--white);border-radius:16px;padding:2rem;border:1px solid var(--border);box-shadow:0 4px 24px rgba(46,49,145,.07)}
+.form-box h3{font-family:var(--fh);font-size:20px;font-weight:800;color:var(--blue2);margin-bottom:.4rem}
+.form-box p{font-size:14px;color:var(--muted);margin-bottom:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.form-group{margin-bottom:12px}
+.form-group label{display:block;font-size:11px;font-weight:700;color:var(--blue2);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px;font-family:var(--fh)}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--fb);font-size:14px;color:var(--blue2);background:var(--white);outline:none;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue)}
+.form-group textarea{resize:vertical;min-height:90px}
+.form-submit{width:100%;background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:15px;font-weight:700;padding:14px;border-radius:8px;margin-top:6px;transition:background .2s}
+.form-submit:hover{background:var(--blue2)}
+.office-card{background:var(--light);border-radius:10px;padding:1rem;border:1px solid var(--border)}
+.office-city{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--blue);margin-bottom:3px}
+.office-addr{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* ── AI SECTION ── */
+.ai-section{background:var(--blue2);padding:72px 2.5rem;position:relative;overflow:hidden}
+.sec-blue .sec-tag,.sec-dark .sec-tag,.ai-section .sec-tag{color:#f5b61f}
+.sec-blue .link-more,.sec-dark .link-more,.ai-section .link-more{color:#f5b61f}
+.ai-section::before{content:'AI';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-family:var(--fh);font-size:250px;font-weight:800;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
+.ai-card{background:rgba(255,255,255,.07);border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,.12);transition:background .2s}
+.ai-card:hover{background:rgba(255,255,255,.12)}
+.ai-card-icon{font-size:28px;margin-bottom:10px}
+.ai-card-title{font-family:var(--fh);font-size:15px;font-weight:700;color:var(--white);margin-bottom:6px}
+.ai-card-desc{font-size:13px;color:rgba(255,255,255,.68);line-height:1.65}
+.ai-pulse{display:inline-flex;align-items:center;gap:5px;background:rgba(245,182,31,.15);color:#f5b61f;font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:.6rem;border:1px solid rgba(245,182,31,.3);font-family:var(--fh)}
+.ai-dot{width:5px;height:5px;background:#f5b61f;border-radius:50%;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.ai-cta-bar{margin-top:2rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.ai-cta-bar h3{font-family:var(--fh);font-size:17px;font-weight:700;color:var(--white);margin-bottom:4px}
+.ai-cta-bar p{font-size:13px;color:rgba(255,255,255,.58)}
+
+/* ── VIDEO GALLERY ── */
+.vgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;margin-top:2.5rem}
+.vcard{background:rgba(255,255,255,.07);border-radius:12px;border:1px dashed rgba(255,255,255,.2);overflow:hidden;cursor:pointer;transition:background .2s}
+.vcard:hover{background:rgba(255,255,255,.12)}
+.vthumb{aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;position:relative;padding:1.5rem}
+.vcard-label{font-size:12px;color:rgba(255,255,255,.58);text-align:center;padding:.5rem .75rem .75rem}
+
+/* ── IFP SECTION (HOME) ── */
+.ifp-section{background:var(--blue2);padding:72px 2.5rem}
+.ifp-partner{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:1.75rem;transition:background .2s}
+.ifp-partner:hover{background:rgba(255,255,255,.12)}
+.ifp-icon{width:54px;height:54px;background:rgba(245,182,31,.12);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:1rem;border:1px solid rgba(245,182,31,.2)}
+.ifp-name{font-family:var(--fh);font-size:17px;font-weight:800;color:var(--white);margin-bottom:.4rem}
+.ifp-type{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#f5b61f;margin-bottom:.75rem;font-family:var(--fh)}
+.ifp-desc{font-size:13px;color:rgba(255,255,255,.62);line-height:1.68}
+.ifp-feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
+.ifp-feat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.25rem;text-align:center}
+.ifp-feat-icon{font-size:26px;margin-bottom:8px}
+.ifp-feat-title{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--white);margin-bottom:4px}
+.ifp-feat-desc{font-size:12px;color:rgba(255,255,255,.52);line-height:1.6}
+
+/* ── PHYGITAL STRIP ── */
+.phygital-strip{background:var(--green);padding:24px 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.phygital-strip h3{font-family:var(--fh);font-size:17px;font-weight:700;color:var(--white)}
+.phygital-strip p{font-size:13px;color:rgba(255,255,255,.82);margin-top:3px}
+
+/* ── KIT CARDS ── */
+.kit-card{border-radius:16px;overflow:hidden;border:1px solid var(--border)}
+.kit-head{padding:1.75rem}
+.kit-head h3{font-family:var(--fh);font-size:18px;font-weight:800;color:var(--white);margin-bottom:.4rem}
+.kit-head p{font-size:13px;color:rgba(255,255,255,.8);line-height:1.65}
+.kit-body{padding:1.5rem;background:var(--white)}
+.kit-item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+.kit-item:last-child{border-bottom:none}
+.kit-icon{width:32px;height:32px;border-radius:8px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;margin-top:1px}
+.kit-name{font-size:13px;font-weight:700;color:var(--blue2);font-family:var(--fh)}
+.kit-desc{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5}
+
+/* ── PILLARS BOX ── */
+.pillars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:1.5rem}
+.pillar-pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:1rem 1.25rem}
+.pillar-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gold);margin-bottom:4px;font-family:var(--fh)}
+.pillar-body{font-size:12px;color:rgba(255,255,255,.7);line-height:1.6}
+
+/* ── PROOF ROW ── */
+.proof-row{display:flex;gap:2.5rem;flex-wrap:wrap}
+.proof-num{font-family:var(--fh);font-size:26px;font-weight:800;color:var(--blue)}
+.proof-lbl{font-size:11px;color:var(--muted);margin-top:2px;font-weight:500}
+
+/* ── IMPACT BAR (about) ── */
+.impact-bar{background:var(--blue);padding:40px 2.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.impact-item{text-align:center;padding:1rem;border-right:1px solid rgba(255,255,255,.12)}
+.impact-item:last-child{border-right:none}
+.impact-num{font-family:var(--fh);font-size:32px;font-weight:800;color:#f5b61f}
+.impact-lbl{font-size:12px;color:rgba(255,255,255,.65);margin-top:4px;font-weight:500}
+
+/* ── TOPSCHOOL SCREEN ── */
+.topschool-screen{width:100%;border-radius:14px;border:3px solid var(--blue);box-shadow:0 8px 32px rgba(46,49,145,.15)}
+.platform-feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem}
+.pfeat{background:var(--white);border-radius:12px;padding:1.25rem;border:1px solid var(--border)}
+.pfeat-icon{font-size:24px;margin-bottom:8px}
+.pfeat-name{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:4px}
+.pfeat-desc{font-size:12px;color:var(--muted);line-height:1.65}
+
+/* ── ACADEMICS BAND ── */
+.acad-band{background:var(--blue2);padding:40px 2.5rem}
+.acad-stat{text-align:center}
+.acad-num{font-family:var(--fh);font-size:32px;font-weight:800;color:#ffffff}
+.acad-lbl{font-size:12px;color:rgba(255,255,255,.65);margin-top:4px;font-weight:500}
+
+/* ── STAKEHOLDER TABS ── */
+.s-tabs{display:flex;gap:8px;margin-bottom:1.5rem}
+.s-tab{font-size:13px;font-weight:600;font-family:var(--fh);padding:8px 20px;border-radius:8px;border:1.5px solid var(--border);background:var(--white);color:var(--muted);cursor:pointer;transition:all .2s}
+.s-tab.active{background:var(--green);color:var(--white);border-color:var(--green)}
+.s-panel{display:none}.s-panel.active{display:block}
+.s-inner{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+
+/* ── JOB CARDS ── */
+.job-card{background:var(--white);border-radius:12px;padding:1.25rem 1.5rem;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:box-shadow .2s;cursor:pointer}
+.job-card:hover{box-shadow:0 4px 16px rgba(46,49,145,.1)}
+.job-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:4px}
+.job-meta{display:flex;gap:8px;flex-wrap:wrap}
+.job-tag{font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;background:var(--light);color:var(--muted);font-family:var(--fh)}
+.job-apply{background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:13px;font-weight:700;padding:9px 20px;border-radius:8px}
+.jobs-grid{display:grid;gap:1rem;margin-top:2rem}
+
+/* ── BLOG/SUPPORT ── */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.bcard{border-radius:14px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s}
+.bcard:hover{box-shadow:0 6px 24px rgba(46,49,145,.1)}
+.bimg{aspect-ratio:16/9;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border);position:relative}
+.bbody{padding:1.25rem}
+.btag{display:inline-block;background:rgba(27,138,115,.1);color:var(--green);font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-bottom:8px;font-family:var(--fh)}
+.btitle{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--blue2);line-height:1.5;margin-bottom:8px}
+.bmeta{font-size:12px;color:var(--muted)}
+.support-card{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border);text-align:center}
+.support-icon{font-size:36px;margin-bottom:12px}
+.support-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:6px}
+.support-desc{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:1rem}
+.support-btn{display:inline-block;background:var(--light);color:var(--blue2);font-size:13px;font-weight:600;padding:8px 18px;border-radius:8px;cursor:pointer;border:1px solid var(--border);font-family:var(--fh)}
+
+/* ── CONCLAVE ── */
+.cimg{aspect-ratio:16/9;background:var(--blue2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative}
+.cimg-year{font-family:var(--fh);font-size:48px;font-weight:800;color:rgba(255,255,255,.12)}
+.cimg-title{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--white);text-align:center;padding:0 2rem}
+.conclave-body{padding:1.25rem;background:var(--white)}
+.ctitle{font-family:var(--fh);font-size:15px;font-weight:700;color:var(--blue2);margin-bottom:6px}
+.cmeta{font-size:13px;color:var(--muted);margin-bottom:8px}
+.clink{font-size:13px;font-weight:700;color:var(--green);cursor:pointer;font-family:var(--fh)}
+.conclave-card{border-radius:16px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s}
+.conclave-card:hover{box-shadow:0 8px 32px rgba(46,49,145,.1)}
+
+/* ── FOOTER ── */
+footer{background:#0A4B9B;padding:15px 0.8rem 28px}
+.footer-nel-accent{color:#0F9BD7;font-weight:800}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.footer-logo-wrap{height:48px;margin-bottom:12px;display:flex;align-items:center}
+.footer-logo-wrap img{height:48px;width:auto}
+.footer-tagline{color:rgba(255,255,255,.5);font-size:13px;line-height:1.72;max-width:280px}
+.fcol h4{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:14px;font-family:var(--fh)}
+.fcol a{display:block;color:rgba(255,255,255,.62);font-size:13px;text-decoration:none;margin-bottom:8px;cursor:pointer;font-weight:500}
+.fcol a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.28)}
+.socials{display:flex;gap:10px}
+.sdot{width:32px;height:32px;background:rgba(255,255,255,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:rgba(255,255,255,.5);cursor:pointer;border:1px solid rgba(255,255,255,.1)}
+
+/* ── INLINE SVG LOGOS ── */
+.logo-ntt{font-family:'Montserrat',sans-serif;font-weight:800;font-size:inherit;line-height:1}
+.logo-ntt .n{color:#2e3191}.logo-ntt .t{color:#1b8a73}
+.prod-name-blue{font-family:'Montserrat',sans-serif;font-weight:800;color:#2e3191}
+.prod-name-green{font-family:'Montserrat',sans-serif;font-weight:800;color:#1b8a73}
+
+/* ── MISC ── */
+.pill-active{background:var(--blue);color:var(--white);display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 12px;border-radius:20px;margin-right:6px;margin-bottom:6px;cursor:pointer;font-family:var(--fh)}
+.pill-inactive{background:var(--light);color:var(--muted);border:1px solid var(--border);display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 12px;border-radius:20px;margin-right:6px;margin-bottom:6px;cursor:pointer;font-family:var(--fh)}
+.divider{height:3px;background:var(--blue),var(--green),transparent;margin:0}
+.section-accent{border-left:4px solid var(--green);padding-left:1rem}
+.highlight-box{background:var(--blue),rgba(27,138,115,.06);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.green-dot{display:inline-block;width:8px;height:8px;background:var(--green);border-radius:50%;margin-right:8px}
+
+/* ── SCHOOL LOGOS STRIP ── */
+.schools-strip{background:var(--white);padding:48px 0;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.schools-strip-inner{padding:0 2.5rem;text-align:center;margin-bottom:1.5rem}
+.schools-strip-inner .sec-tag{display:block}
+.schools-strip-inner h2{font-family:var(--fh);font-size:24px;font-weight:800;color:var(--blue2)}
+.schools-strip-inner p{font-size:14px;color:var(--muted);margin-top:6px}
+.scroll-track-wrap{overflow:hidden;position:relative}
+.scroll-track-wrap::before,.scroll-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+.scroll-track-wrap::before{left:0;background:linear-gradient(to right,var(--white),transparent)}
+.scroll-track-wrap::after{right:0;background:linear-gradient(to left,var(--white),transparent)}
+.scroll-track{display:flex;gap:0;animation:scrollLeft 40s linear infinite;width:max-content}
+.scroll-track:hover{animation-play-state:paused}
+@keyframes scrollLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.school-logo-item{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:140px;padding:12px 20px;gap:8px;cursor:default}
+.school-logo-badge{width:72px;height:72px;border-radius:50%;background:var(--light);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:11px;font-weight:800;color:var(--blue);text-align:center;line-height:1.2;padding:8px;transition:border-color .2s,background .2s}
+.school-logo-badge:hover{border-color:var(--blue);background:rgba(46,49,145,.05)}
+.school-logo-name{font-size:11px;color:var(--muted);text-align:center;font-weight:500;max-width:120px;line-height:1.3}
+
+</style>
+
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"NAVNEET TOPTECH","alternateName":"NTT","url":"https://navneettoptech.com","logo":"https://navneettoptech.com/assets/logo.png","description":"India's School Transformation Partner — EdTech arm of Navneet Education Limited. Partnering with 4,000+ CBSE and Maharashtra State Board schools.","telephone":"+911800266676","email":"info@navneettoptech.com","sameAs":["https://www.facebook.com/navneettoptech","https://www.linkedin.com/company/navneet-toptech","https://www.youtube.com/c/navneettoptech"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EventSeries","name":"NAVNEET TOPTECH Conclave","description":"A recurring series of educator conclaves across Indian cities featuring panel discussions, workshops, product demos, and networking for principals, trustees, school owners, and teachers.","url":"https://navneettoptech.com/conclaves","organizer":{"@type":"Organization","name":"NAVNEET TOPTECH","url":"https://navneettoptech.com"},"subEvent":[{"@type":"Event","name":"NAVNEET TOPTECH Conclave 2025 — Mysore","startDate":"2025-01-11","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Mysore","address":{"@type":"PostalAddress","addressLocality":"Mysore","addressRegion":"Karnataka","addressCountry":"IN"}},"organizer":{"@type":"Organization","name":"NAVNEET TOPTECH","url":"https://navneettoptech.com"}},{"@type":"Event","name":"NAVNEET TOPTECH Conclave 2025 — Belgavi","startDate":"2025-01-18","eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"Belgavi","address":{"@type":"PostalAddress","addressLocality":"Belgavi","addressRegion":"Karnataka","addressCountry":"IN"}},"organizer":{"@type":"Organization","name":"NAVNEET TOPTECH","url":"https://navneettoptech.com"}}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"NAVNEET TOPTECH Conclave 2025 Aftermovie — Bengaluru","description":"Recap video from the NAVNEET TOPTECH Conclave 2025 edition in Bengaluru, featuring highlights from panel discussions and workshops.","thumbnailUrl":"https://img.youtube.com/vi/ZzQoEfv3_wE/hqdefault.jpg","uploadDate":"2025-01-01","contentUrl":"https://youtu.be/ZzQoEfv3_wE","embedUrl":"https://www.youtube.com/embed/ZzQoEfv3_wE","publisher":{"@type":"Organization","name":"NAVNEET TOPTECH","url":"https://navneettoptech.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"NAVNEET TOPTECH Conclave 2024 Aftermovie","description":"Recap video from the NAVNEET TOPTECH Conclave 2024 edition, featuring highlights from panel discussions and workshops across host cities.","thumbnailUrl":"https://img.youtube.com/vi/EpXR7WBTk5U/hqdefault.jpg","uploadDate":"2024-01-01","contentUrl":"https://youtu.be/EpXR7WBTk5U","embedUrl":"https://www.youtube.com/embed/EpXR7WBTk5U","publisher":{"@type":"Organization","name":"NAVNEET TOPTECH","url":"https://navneettoptech.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"VideoObject","name":"NAVNEET TOPTECH Conclave 2023 Aftermovie","description":"Recap video from the NAVNEET TOPTECH Conclave 2023 edition, featuring highlights from panel discussions and workshops across host cities.","thumbnailUrl":"https://img.youtube.com/vi/oeycYIE4xfo/hqdefault.jpg","uploadDate":"2023-01-01","contentUrl":"https://youtu.be/oeycYIE4xfo","embedUrl":"https://www.youtube.com/embed/oeycYIE4xfo","publisher":{"@type":"Organization","name":"NAVNEET TOPTECH","url":"https://navneettoptech.com"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who can attend a NAVNEET TOPTECH Conclave?","acceptedAnswer":{"@type":"Answer","text":"Conclaves are open to school owners, trustees, directors, principals, vice principals, academic coordinators, and teachers — anyone in a school leadership or teaching role."}},{"@type":"Question","name":"Which school boards are covered?","acceptedAnswer":{"@type":"Answer","text":"Educators from CBSE, ICSE, Maharashtra State Board, IB, IGCSE, and State Board/CBSE Pattern schools are all welcome — the conclave isn't limited to any single board."}},{"@type":"Question","name":"Does registering guarantee my seat?","acceptedAnswer":{"@type":"Answer","text":"Not automatically. Registering submits your interest — our events team will call to confirm your city, date, and participation details before your seat is finalised."}},{"@type":"Question","name":"How do I find out when the conclave is coming to my city?","acceptedAnswer":{"@type":"Answer","text":"Register your interest and our events team will confirm your nearest city, date, and other participation details directly."}},{"@type":"Question","name":"Can I see highlights from past conclaves before registering?","acceptedAnswer":{"@type":"Answer","text":"Yes — aftermovies from the 2023, 2024, and 2025 editions are on this page, along with a video playlist of attendees sharing their own experience."}}]}
+</script>
+<!-- DEV NOTE: uploadDate values are PLACEHOLDERS marking edition year only (YouTube blocks direct scraping of exact publish dates from this environment) — pull real upload dates from YouTube Studio before publishing. -->
+</head>
+<body>
+
+   <!-- NAV -->
+    <nav>
+      <div class="nav-logo" onclick="goPage('home')">
+        <svg
+          width="180"
+          height="44"
+          viewBox="0 0 360 88"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text
+            x="0"
+            y="32"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="28"
+            fill="#2e3191"
+          >
+            nav
+          </text>
+          <text
+            x="62"
+            y="32"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="28"
+            fill="#2e3191"
+          >
+            N
+          </text>
+          <text
+            x="84"
+            y="32"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="22"
+            fill="#2e3191"
+          >
+            EET
+          </text>
+          <text
+            x="0"
+            y="75"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#2e3191"
+          >
+            T
+          </text>
+          <circle
+            cx="42"
+            cy="55"
+            r="22"
+            fill="none"
+            stroke="#2e3191"
+            stroke-width="2"
+          />
+          <circle cx="42" cy="55" r="22" fill="url(#globeGrad)" opacity="0.9" />
+          <defs>
+            <radialGradient id="globeGrad" cx="40%" cy="40%">
+              <stop offset="0%" stop-color="#2e3191" />
+              <stop offset="100%" stop-color="#1b8a73" />
+            </radialGradient>
+          </defs>
+          <text
+            x="68"
+            y="75"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#2e3191"
+          >
+            P
+          </text>
+          <text
+            x="113"
+            y="75"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#1b8a73"
+          >
+            TECH
+          </text>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <span>About Us ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('about')">About NTT</a>
+            <a
+              onclick="window.open('https://navneet.com')"
+              rel="noopener noreferrer"
+              >About NEL ↗</a
+            >
+            <a onclick="goPage('news')">Awards</a>
+          </div>
+        </li>
+        <li>
+          <span>Our Products ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('topschool')">TopSchool LMS</a>
+            <a
+              onclick="goPage('topseries')"
+              style="padding-left: 32px; font-size: 12px; color: var(--muted)"
+              >↳ TopSeries</a
+            >
+            <a onclick="goPage('topclass')">TopClass</a>
+            <a onclick="goPage('topassess')">TopAssess</a>
+            <a onclick="goPage('ifp')">Hardware & IFP</a>
+          </div>
+        </li>
+        <li>
+          <span>Events ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('conclaves')">Conclaves</a>
+            <a onclick="goPage('conclaves')">Expos</a>
+            <a onclick="goPage('conclaves')">Contests</a>
+          </div>
+        </li>
+        <li>
+          <span>Blogs ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('news')">In the News</a>
+            <a onclick="goPage('blogs')">Blogs</a>
+          </div>
+        </li>
+        <li>
+          <span>Contact ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('contact')">Contact Us</a>
+            <a onclick="goPage('careers')">Careers</a>
+            <a onclick="goPage('support')">Support & Services</a>
+          </div>
+        </li>
+        <li>
+          <a
+            onclick="window.open('http://nityatraining.com')"
+            rel="noopener noreferrer"
+            style="color: var(--green); font-weight: 700"
+            >Nitya Training ↗</a
+          >
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-sup" href="https://navneetfoundation.in" target="_blank"
+          >Support a Child ↗</a
+        >
+        <button class="nav-cta" onclick="goPage('contact')">
+          Book a Free Demo
+        </button>
+      </div>
+    </nav>
+
+<div id="page-conclaves" class="page active">
+  <div class="breadcrumb"><a onclick="goPage('home')">Home</a><span>/</span><span>Conclaves</span></div>
+  <div class="page-hero">
+    <div class="page-hero-tag">India's Largest Educators' Event · NEP 2020 Workshops · Pan-India</div>
+    <h1>Fostering a Community of Principals & Educators Leading India's Education Revolution.</h1>
+    <p>NAVNEET TOPTECH Conclaves bring principals, trustees, school owners, and teachers together across 50+ cities — for panel discussions, hands-on workshops, and a community built to move school education forward through technology.</p>
+    <button class="btn-gold" onclick="goPage('contact')">Register Your City</button>
+  </div>
+
+   <div class="stats-bar">
+        <div class="stat-item">
+          <div class="stat-num">4,000+</div>
+          <div class="stat-label">Partner Schools</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">1,00,000+</div>
+          <div class="stat-label">Teachers Trained</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">20,00,000+</div>
+          <div class="stat-label">Students Enriched</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">30+</div>
+          <div class="stat-label">Cities</div>
+        </div>
+      </div>
+
+  <!-- ABOUT CONCLAVES -->
+  <section class="sec sec-white">
+    <div class="g2" style="gap:3.5rem;align-items:center">
+      <div>
+        <p class="sec-tag">About NAVNEET TOPTECH Conclaves</p>
+        <h2 class="sec-title">A Platform Built for Educators, by Educators.</h2>
+        <p class="sec-sub" style="margin-bottom:1rem">NAVNEET TOPTECH Conclaves connect school leaders and teachers from across India to share ideas, solve common classroom challenges, and shape what's next for school education. Every edition is built around practical, hands-on sessions — not just talks — covering EdTech adoption, modern pedagogy, and how schools can align with NEP 2020 in practice, not just on paper.</p>
+        <p class="sec-sub">Educators walk away with real takeaways: peer connections that outlast the event, and frameworks they can apply in their own schools the following Monday.</p>
+      </div>
+      <div class="hero-video" style="background:var(--light);border:1.5px dashed var(--border)">
+        <div class="vbadge" style="background:var(--blue)">Conclave 2024</div>
+        <div class="vplay" style="background:var(--green)"></div>
+        <span class="vlabel" style="color:var(--muted)">NAVNEET TOPTECH Conclave 2024 — Shaping the Future of Education Through Technology</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ATTEND -->
+  <section class="sec sec-light">
+    <p class="sec-tag">Why Attend</p>
+    <h2 class="sec-title" style="margin-bottom:2rem">Five Reasons Educators Keep Coming Back.</h2>
+    <div class="g3">
+      <div class="fcard"><div class="fcard-icon">🚀</div><div class="pcard-name" style="font-size:15px">Stay Ahead of the Curve</div><div class="pcard-desc">Hands-on exposure to EdTech tools that are already reshaping how classrooms teach and how students learn.</div></div>
+      <div class="fcard"><div class="fcard-icon">🎓</div><div class="pcard-name" style="font-size:15px">Empowerment Through Knowledge</div><div class="pcard-desc">Sessions on the teaching techniques and pedagogies built for a tech-driven classroom.</div></div>
+      <div class="fcard"><div class="fcard-icon">🤝</div><div class="pcard-name" style="font-size:15px">Community & Collaboration</div><div class="pcard-desc">A peer network of principals and teachers that stays connected long after the event ends.</div></div>
+      <div class="fcard"><div class="fcard-icon">🛠️</div><div class="pcard-name" style="font-size:15px">Special Workshops</div><div class="pcard-desc">Interactive, expert-led sessions built for hands-on learning, not passive listening.</div></div>
+      <div class="fcard"><div class="fcard-icon">📘</div><div class="pcard-name" style="font-size:15px">Understanding NEP 2020</div><div class="pcard-desc">Clear, practical guidance on what NEP 2020 actually means for day-to-day school implementation.</div></div>
+      <div class="fcard" style="background:var(--blue);display:flex;flex-direction:column;justify-content:center;align-items:flex-start">
+        <div class="pcard-name" style="color:var(--white);font-size:15px">Claim Your City's Spot</div>
+        <div class="pcard-desc" style="color:rgba(255,255,255,.75);margin-bottom:12px">Registration confirms your seat — our team calls to finalise participation details.</div>
+        <button class="btn-gold" onclick="goPage('contact')" style="padding:9px 20px;font-size:12px">Register Interest →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENT AGENDA -->
+  <section class="sec sec-white">
+    <p class="sec-tag">Event Agenda</p>
+    <h2 class="sec-title">Panels, Workshops, Product Demos & Networking.</h2>
+    <div class="s-tabs" style="flex-wrap:wrap">
+      <div class="s-tab active" onclick="switchS(this,'panel')">Panel Discussions</div>
+      <div class="s-tab" onclick="switchS(this,'workshop')">Workshops</div>
+      <div class="s-tab" onclick="switchS(this,'demo')">Product Demos</div>
+      <div class="s-tab" onclick="switchS(this,'network')">Networking</div>
+    </div>
+    <div id="s-panel" class="s-panel active">
+      <p class="sec-sub" style="margin-bottom:1.5rem">A dynamic exchange of ideas as leading educators and thought leaders unpack the evolving landscape of school education, and surface opportunities shaping the future of learning.</p>
+      <div class="g4">
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Panel photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Panel photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Panel photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Panel photo ]</div>
+      </div>
+    </div>
+    <div id="s-workshop" class="s-panel">
+      <p class="sec-sub" style="margin-bottom:1.5rem">Hands-on activities and techniques designed to build analytical thinking, creativity, and resilience — equipping educators to help students thrive academically and beyond.</p>
+      <div class="g4">
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Workshop photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Workshop photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Workshop photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Workshop photo ]</div>
+      </div>
+    </div>
+    <div id="s-demo" class="s-panel">
+      <p class="sec-sub" style="margin-bottom:1.5rem">Live, hands-on walkthroughs of TopSchool LMS, TopClass, and TopAssess at a dedicated demo zone — so principals and trustees can see the product before committing to a pilot.</p>
+      <div class="g4">
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Demo zone photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Demo zone photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Demo zone photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Demo zone photo ]</div>
+      </div>
+    </div>
+    <div id="s-network" class="s-panel">
+      <p class="sec-sub" style="margin-bottom:1.5rem">Structured networking between sessions — principals, trustees, and school owners connecting across cities, building the same peer community that keeps educators coming back edition after edition.</p>
+      <div class="g4">
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Networking photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Networking photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Networking photo ]</div>
+        <div style="background:var(--light);border:2px dashed var(--border);border-radius:12px;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-align:center;padding:.5rem">[ Networking photo ]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENT CONCLAVES -->
+  <section class="sec sec-light">
+    <p class="sec-tag">Recent Conclaves</p>
+    <h2 class="sec-title" style="margin-bottom:.5rem">Editions That Enlightened Minds, Connected Peers.</h2>
+    <p class="sec-sub" style="margin-bottom:2rem">A city footprint that's grown every year.</p>
+
+    <div class="cur-tabs">
+      <div class="cur-tab active" onclick="switchCur(this,'y25')">2025 · 36 Cities</div>
+      <div class="cur-tab" onclick="switchCur(this,'y24')">2024 · 26 Cities</div>
+      <div class="cur-tab" onclick="switchCur(this,'y23')">2023 · 28 Cities</div>
+      <div class="cur-tab" onclick="switchCur(this,'y22')">2022 · 10 Cities</div>
+    </div>
+
+    <!-- 2025 -->
+    <div id="cur-y25" class="cur-panel active">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:1.25rem">
+        <div style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--blue2)">36 Cities</div>
+        <span onclick="window.open('https://youtu.be/ZzQoEfv3_wE?si=Sq5is4mnmpZ6hCd4')" style="font-size:13px;font-weight:700;color:var(--green);cursor:pointer;font-family:var(--fh)">▶ Watch the 2025 Aftermovie →</span>
+      </div>
+      <div class="photo-scroller">
+        <!-- ADD 2025 EVENT PHOTOS HERE: <img src="..." alt="Conclave 2025 — [City]"> -->
+        <div class="photo-slot-add"><span>+</span>Add 2025 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2025 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2025 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2025 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2025 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2025 photo</div>
+      </div>
+    </div>
+
+    <!-- 2024 -->
+    <div id="cur-y24" class="cur-panel">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:1.25rem">
+        <div style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--blue2)">26 Cities</div>
+        <span onclick="window.open('https://youtu.be/EpXR7WBTk5U?si=N6yRMXSTOQn_m3EN')" style="font-size:13px;font-weight:700;color:var(--green);cursor:pointer;font-family:var(--fh)">▶ Watch the 2024 Aftermovie →</span>
+      </div>
+      <div class="photo-scroller">
+        <!-- ADD 2024 EVENT PHOTOS HERE: <img src="..." alt="Conclave 2024 — [City]"> -->
+        <div class="photo-slot-add"><span>+</span>Add 2024 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2024 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2024 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2024 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2024 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2024 photo</div>
+      </div>
+    </div>
+
+    <!-- 2023 -->
+    <div id="cur-y23" class="cur-panel">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:1.25rem">
+        <div style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--blue2)">28 Cities</div>
+        <span onclick="window.open('https://youtu.be/oeycYIE4xfo?si=yUVhYr5ubupf8YEo')" style="font-size:13px;font-weight:700;color:var(--green);cursor:pointer;font-family:var(--fh)">▶ Watch the 2023 Aftermovie →</span>
+      </div>
+      <div class="photo-scroller">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/02/DSC_1141.jpg" alt="Conclave 2023">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/02/1R9A6653.jpg" alt="Conclave 2023">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/02/AEHA9751.jpg" alt="Conclave 2023">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/02/1R9A6823.jpg" alt="Conclave 2023">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/02/AEHA9515.jpg" alt="Conclave 2023">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/DSC_3427.jpg" alt="Conclave 2023">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/DSC_7063.jpg" alt="Conclave 2023">
+        <!-- ADD MORE 2023 EVENT PHOTOS HERE: <img src="..." alt="Conclave 2023 — [City]"> -->
+        <div class="photo-slot-add"><span>+</span>Add 2023 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2023 photo</div>
+      </div>
+    </div>
+
+    <!-- 2022 — real photos from live site -->
+    <div id="cur-y22" class="cur-panel">
+      <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:1.25rem">
+        <div style="font-family:var(--fh);font-size:28px;font-weight:800;color:var(--blue2)">10 Cities</div>
+      </div>
+      <div class="photo-scroller">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/IMG_9696.jpg" alt="Conclave 2022">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/IMG_9750.jpg" alt="Conclave 2022">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/IMG_9827.jpg" alt="Conclave 2022">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/IMG_9919.jpg" alt="Conclave 2022">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/IMG_9689.jpg" alt="Conclave 2022">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/TJ043114.jpg" alt="Conclave 2022">
+        <img src="https://navneettoptech.com/wp-content/uploads/2024/04/DSC_1995.jpg" alt="Conclave 2022">
+        <!-- ADD MORE 2022 EVENT PHOTOS HERE: <img src="..." alt="Conclave 2022 — [City]"> -->
+        <div class="photo-slot-add"><span>+</span>Add 2022 photo</div>
+        <div class="photo-slot-add"><span>+</span>Add 2022 photo</div>
+      </div>
+    </div>
+    <!-- DEV NOTE: city counts (36/26/28/10) are confirmed by marketing; individual city names are not shown since only 2-6 per year are independently verified — full lists pending from events team. Aftermovie links are real YouTube URLs. photo-scroller rows are built to just take more <img> tags — drop new ones in above the "Add photo" placeholder divs (delete those once real photos fill the row). 2022/2023 photos are live URLs already hosted on navneettoptech.com. No 2024/2025 photo gallery exists on the live site (only aftermovie videos) — 2024/2025 slots stay open until real event photography is supplied. -->
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="sec sec-light">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:2rem">
+      <div>
+        <p class="sec-tag">What Educators Say</p>
+        <h2 class="sec-title" style="margin-bottom:0">Feedback From the Community.</h2>
+      </div>
+      <button class="btn-outline-blue" onclick="window.open('https://youtube.com/playlist?list=PLljLM3H6SnPlSMDt0AH-QFgqeJrgOkyRh&si=Tymd-UPAzVoyRe9E')">▶ Hear From Attendees</button>
+    </div>
+    <div class="g3">
+      <div class="fcard">
+        <div style="font-size:24px;color:var(--green);margin-bottom:8px">"</div>
+        <div class="pcard-desc" style="margin-bottom:12px">Called the workshops highly informative, valuing how the community-building sessions made it easy to network with other educators.</div>
+        <div class="pcard-name" style="font-size:13px">Kalpana Paigwar</div>
+        <div class="pcard-tag">St. Thomas English School, Chhattisgarh</div>
+      </div>
+      <div class="fcard">
+        <div style="font-size:24px;color:var(--green);margin-bottom:8px">"</div>
+        <div class="pcard-desc" style="margin-bottom:12px">Described the group discussion as the highlight of the conclave — a session that built real communication and collaboration skills.</div>
+        <div class="pcard-name" style="font-size:13px">Supreet Kaur</div>
+        <div class="pcard-tag">Rose Buds Public School</div>
+      </div>
+      <div class="fcard">
+        <div style="font-size:24px;color:var(--green);margin-bottom:8px">"</div>
+        <div class="pcard-desc" style="margin-bottom:12px">Found the session on high-performing teams genuinely useful, and credited the conclave with essential insights for principals nurturing effective teams.</div>
+        <div class="pcard-name" style="font-size:13px">Mr. Gangadhar Kallappa Jodagudri</div>
+        <div class="pcard-tag">H.B. English Medium School</div>
+      </div>
+      <div class="fcard">
+        <div style="font-size:24px;color:var(--green);margin-bottom:8px">"</div>
+        <div class="pcard-desc" style="margin-bottom:12px">Praised the multi-skill foundation workshop for students as insightful, and expressed excitement for future editions.</div>
+        <div class="pcard-name" style="font-size:13px">Neha Satyajit Desai</div>
+        <div class="pcard-tag">Principal</div>
+      </div>
+      <div class="fcard">
+        <div style="font-size:24px;color:var(--green);margin-bottom:8px">"</div>
+        <div class="pcard-desc" style="margin-bottom:12px">As a new teacher, found the conclave community supportive and credited fellow educators with helping them grow quickly.</div>
+        <div class="pcard-name" style="font-size:13px">Kalpana Paigwar</div>
+        <div class="pcard-tag">St. Thomas English School, Chhattisgarh</div>
+      </div>
+      <div class="fcard">
+        <div style="font-size:24px;color:var(--green);margin-bottom:8px">"</div>
+        <div class="pcard-desc" style="margin-bottom:12px">Called NAVNEET TOPTECH's continuous support excellent, describing the conclave sessions as fun, engaging, and productive for educators.</div>
+        <div class="pcard-name" style="font-size:13px">Mrs. Kavita Nitesh Nade</div>
+        <div class="pcard-tag">Educator</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec sec-white">
+    <p class="sec-tag">FAQs</p><h2 class="sec-title">Common Questions</h2>
+    <div style="max-width:780px;margin-top:1.5rem">
+      <div class="faq-item open" onclick="toggleFaq(this)"><div class="faq-q">Who can attend a NAVNEET TOPTECH Conclave? <span class="faq-chev">+</span></div><div class="faq-a">Conclaves are open to school owners, trustees, directors, principals, vice principals, academic coordinators, and teachers — anyone in a school leadership or teaching role.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Which school boards are covered? <span class="faq-chev">+</span></div><div class="faq-a">Educators from CBSE, ICSE, Maharashtra State Board, IB, IGCSE, and State Board/CBSE Pattern schools are all welcome — the conclave isn't limited to any single board.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Does registering guarantee my seat? <span class="faq-chev">+</span></div><div class="faq-a">Not automatically. Registering submits your interest — our events team will call to confirm your city, date, and participation details before your seat is finalised.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">How do I find out when the conclave is coming to my city? <span class="faq-chev">+</span></div><div class="faq-a">Register your interest and our events team will confirm your nearest city, date, and other participation details directly.</div></div>
+      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q">Can I see highlights from past conclaves before registering? <span class="faq-chev">+</span></div><div class="faq-a">Yes — aftermovies from the 2023, 2024, and 2025 editions are on this page, along with a video playlist of attendees sharing their own experience.</div></div>
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <h2>Bring the Next Conclave to Your City.</h2>
+    <p>Register your school's interest, and our events team will confirm your city, date, and participation details.</p>
+    <div class="cta-btns">
+      <button class="btn-wh" onclick="goPage('contact')">Register Interest</button>
+    </div>
+  </section>
+  
+ <!-- ═══ SHARED FOOTER TEMPLATE ═══ -->
+    <template id="footer-tpl">
+      <footer style="background: #061e3e">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+            padding: 12px 1.9rem 0;
+          "
+         >
+          <!-- BRAND COL -->
+          <div>
+            <div class="footer-logo-wrap">
+              <svg
+                width="180"
+                height="44"
+                viewBox="0 0 360 88"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <text
+                  x="0"
+                  y="32"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="26"
+                  fill="white"
+                >
+                  nav
+                </text>
+                <text
+                  x="58"
+                  y="32"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="26"
+                  fill="white"
+                >
+                  N
+                </text>
+                <text
+                  x="79"
+                  y="32"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="21"
+                  fill="white"
+                >
+                  EET
+                </text>
+                <text
+                  x="0"
+                  y="74"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="40"
+                  fill="white"
+                >
+                  T
+                </text>
+                <circle cx="40" cy="55" r="20" fill="#0F9BD7" />
+                <text
+                  x="64"
+                  y="74"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="40"
+                  fill="white"
+                >
+                  P
+                </text>
+                <text
+                  x="107"
+                  y="74"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="40"
+                  fill="#0F9BD7"
+                >
+                  TECH
+                </text>
+              </svg>
+            </div>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.72);
+                font-size: 13px;
+                line-height: 1.72;
+                margin-top: 12px;
+                max-width: 280px;
+              "
+            >
+              India's School Transformation Partner — the EdTech arm of
+              <span style="color: #0f9bd7; font-weight: 700"
+                >Navneet Education Limited</span
+              >. Combining 65+ years of educational expertise with technology
+              built for Indian classrooms.
+            </p>
+            <div class="socials" style="margin-top: 16px">
+              <div class="sdot">Fb</div>
+              <div class="sdot">Tw</div>
+              <div class="sdot">Yt</div>
+              <div class="sdot">Ig</div>
+              <div class="sdot">Li</div>
+            </div>
+            <div
+    class="mobile-no-border"
+    style="
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    "
+>
+              <div class="products-label"
+                style="
+                  font-size: 10px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 1.2px;
+                  color: #0f9bd7;
+                  margin-bottom: 10px;
+                  font-family: var(--fh);
+                "
+              >
+                Contact
+              </div>
+              <div
+                style="
+                  font-size: 13px;
+                  color: rgba(255, 255, 255, 0.85);
+                  margin-bottom: 6px;
+                "
+              >
+                📞 1800 266 6676 (Toll Free)
+              </div>
+              <div style="font-size: 13px; color: rgba(255, 255, 255, 0.85)">
+                ✉️ info@navneettoptech.com
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCTS -->
+          <div>
+            <div  class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Products
+            </div>
+            <a
+              onclick="goPage('topschool')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >TopSchool LMS</a
+            >
+            <a
+              onclick="goPage('topseries')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.65);
+                font-size: 12px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                padding-left: 0.85rem;
+              "
+              >↳ TopSeries</a
+            >
+            <a
+              onclick="goPage('topclass')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >TopClass</a
+            >
+            <a
+              onclick="goPage('topassess')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >TopAssess</a
+            >
+            <a
+              onclick="goPage('ifp')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Hardware & IFP</a
+            >
+            <a
+              onclick="window.open('http://nityatraining.com')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Nitya Training ↗</a
+            >
+            <a
+              onclick="window.open('http://navneetedu.ai')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Navneet AI ↗</a
+            >
+          </div>
+
+          <!-- COMPANY -->
+          <div>
+            <div class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Company
+            </div>
+            <a
+              onclick="goPage('about')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >About NTT</a
+            >
+            <a
+              onclick="window.open('https://navneet.com')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: #0f9bd7;
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 600;
+              "
+              >About NEL ↗</a
+            >
+            <a
+              onclick="goPage('news')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Awards & News</a
+            >
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Events</a
+            >
+            <a
+              onclick="goPage('careers')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Careers</a
+            >
+            <a
+              onclick="goPage('blogs')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Blogs</a
+            >
+          </div>
+
+          <!-- EVENTS -->
+          <div>
+            <div class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Events
+            </div>
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Conclaves</a
+            >
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Expos</a
+            >
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Contests</a
+            >
+            <a
+              onclick="goPage('news')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >In the News</a
+            >
+          </div>
+
+          <!-- SUPPORT -->
+          <div>
+            <div class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Support
+            </div>
+            <a
+              onclick="goPage('contact')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Contact Us</a
+            >
+            <a
+              onclick="goPage('support')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Support & Services</a
+            >
+            <a
+              onclick="window.open('https://navneetfoundation.in')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Support a Child ↗</a
+            >
+            <a
+              onclick="goPage('careers')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Careers</a
+            >
+            <a
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: default;
+              "
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div
+          style="
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+          "
+        >
+          <p
+            style="font-size: 12px; color: rgba(255, 255, 255, 0.5); margin: 0"
+          >
+            © 2026 NAVNEET TOPTECH. All Rights Reserved. · A 100% Subsidiary of
+            <span style="color: #0f9bd7; font-weight: 600"
+              >Navneet Education Limited</span
+            >
+          </p>
+
+          <p
+            style="font-size: 12px; color: rgba(255, 255, 255, 0.5); margin: 0"
+          >
+            Mumbai · Bengaluru · Delhi · Chennai · Hyderabad · Nashik
+          </p>
+        </div>
+      </footer>
+    </template>
+
+  
+</div>
+
+
+
+<script>
+function goPage(id){ /* standalone preview -- full site navigation lives in the main prototype file */ }
+function toggleFaq(el){el.classList.toggle('open')}
+function switchCur(tab,id){
+  const root=tab.closest('section');
+  root.querySelectorAll('.cur-tab').forEach(t=>t.classList.remove('active'));
+  root.querySelectorAll('.cur-panel').forEach(p=>p.classList.remove('active'));
+  tab.classList.add('active');
+  root.querySelector('#cur-'+id).classList.add('active');
+}
+function switchS(tab,id){
+  const root=tab.closest('section');
+  root.querySelectorAll('.s-tab').forEach(t=>t.classList.remove('active'));
+  root.querySelectorAll('.s-panel').forEach(p=>p.classList.remove('active'));
+  tab.classList.add('active');
+  root.querySelector('#s-'+id).classList.add('active');
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support & Services | Best LMS for Schools | NAVNEET TOPTECH</title>
+<meta name="description" content="NAVNEET TOPTECH offers trusted LMS and digital classroom support — easy onboarding, updated curriculum, remote support, and teacher training.">
+<link rel="canonical" href="https://navneettoptech.com/support-services">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#0A4B9B; --blue2:#2e3191; --blue3:#3a3eb8;
+  --green:#1b8a73; --green2:#03ad7e; --green3:#0f5e50;
+  --gold:#1b8a73; --teal:#008aa4;
+  --white:#ffffff; --off:#f7f8fd;
+  --light:#eef0fa; --border:#d4d7ef;
+  --muted:#5a5f8a; --dark:#12154a;
+  --fh:'Montserrat',sans-serif; --fb:'Inter',sans-serif;
+}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);background:var(--white);color:var(--blue2);line-height:1.6}
+.page{display:none}.page.active{display:block}
+
+/* ── NAV ── */
+nav{background:var(--white);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:68px;position:sticky;top:0;z-index:200;border-bottom:3px solid var(--blue);box-shadow:0 2px 20px rgba(46,49,145,.08)}
+.nav-logo{cursor:pointer;display:flex;align-items:center;height:44px}
+.nav-logo img{height:44px;width:auto;display:block}
+.nav-links{display:flex;list-style:none}
+.nav-links li{position:relative}
+.nav-links>li>a,.nav-links>li>span{color:var(--muted);text-decoration:none;font-size:13px;font-weight:600;font-family:var(--fh);padding:0 15px;height:68px;display:flex;align-items:center;cursor:pointer;transition:color .2s,background .2s}
+.nav-links>li:hover>a,.nav-links>li:hover>span{color:var(--blue);background:var(--light)}
+.dropdown{display:none;position:absolute;top:68px;left:0;background:var(--white);min-width:200px;border-top:3px solid var(--green);padding:8px 0;box-shadow:0 8px 32px rgba(46,49,145,.12);z-index:300}
+.nav-links li:hover .dropdown{display:block}
+.dropdown a{display:block;padding:10px 20px;color:var(--muted);text-decoration:none;font-size:13px;font-weight:500;transition:background .15s,color .15s;cursor:pointer}
+.dropdown a:hover{background:var(--light);color:var(--blue)}
+.nav-actions{display:flex;align-items:center;gap:10px}
+.nav-sup{color:var(--muted);font-size:12px;text-decoration:none;font-weight:500}
+.nav-cta{background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:13px;font-weight:700;padding:10px 22px;border-radius:6px;transition:background .2s}
+.nav-cta:hover{background:var(--blue2)}
+
+/* ── HERO ── */
+.hero{background:var(--blue);padding:72px 2.5rem 60px;display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center;min-height:500px}
+.hero-eyebrow{display:inline-block;background:rgba(245,182,31,.15);color:#f5b61f;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:1.25rem;border:1px solid rgba(245,182,31,.3);font-family:var(--fh)}
+.hero h1{font-family:var(--fh);font-size:40px;font-weight:800;line-height:1.18;color:var(--white);margin-bottom:1rem}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero-sub{color:rgba(255,255,255,.82);font-size:15px;line-height:1.75;margin-bottom:2rem}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn-gold{background:var(--green);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:800;padding:13px 28px;border-radius:8px;transition:opacity .2s}
+.btn-gold:hover{opacity:.9}
+.btn-wh-outline{background:rgba(255,255,255,.12);color:var(--white);cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:600;padding:12px 22px;border-radius:8px;border:1.5px solid rgba(255,255,255,.45);display:flex;align-items:center;gap:8px;transition:background .2s}
+.btn-wh-outline:hover{background:rgba(255,255,255,.2)}
+.play-ring{width:26px;height:26px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.play-ring::after{content:'';border-left:9px solid #fff;border-top:5.5px solid transparent;border-bottom:5.5px solid transparent;margin-left:2px}
+.hero-video{background:rgba(255,255,255,.08);border:1.5px dashed rgba(255,255,255,.3);border-radius:16px;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;cursor:pointer;position:relative;overflow:hidden;transition:background .2s}
+.hero-video:hover{background:rgba(255,255,255,.14)}
+.vplay{width:60px;height:60px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.vplay::after{content:'';border-left:22px solid #fff;border-top:13px solid transparent;border-bottom:13px solid transparent;margin-left:4px}
+.vplay-sm{width:42px;height:42px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.vplay-sm::after{content:'';border-left:15px solid #fff;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:3px}
+.vbadge{position:absolute;top:12px;right:12px;background:#0A4B9B;color:var(--white);font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:4px 10px;border-radius:20px}
+.vlabel{color:rgba(255,255,255,.7);font-size:13px;font-weight:500;text-align:center;padding:0 1.5rem}
+.vcat{position:absolute;top:10px;left:10px;background:rgba(245,182,31,.15);color:#f5b61f;font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:3px 9px;border-radius:12px;border:1px solid rgba(245,182,31,.3)}
+
+/* ── STATS BAR ── */
+.stats-bar{background:var(--blue);display:grid;grid-template-columns:repeat(4,2fr);border-top:1px solid rgba(255,255,255,.1)}
+.stat-item{padding:22px 1.5rem;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+.stat-item:last-child{border-right:none}
+.stat-num{font-family:var(--fh);font-size:28px;font-weight:800;color:#f5b61f}
+.stat-label{font-size:12px;color:rgba(255,255,255,.6);margin-top:3px;font-weight:500}
+
+/* ── SECTION BASE ── */
+.sec{padding:72px 2.5rem}
+.sec-white{background:var(--white)}
+.sec-light{background:var(--light)}
+.sec-blue{background:var(--blue)}
+.sec-dark{background:var(--blue2)}
+.sec-green{background:var(--green)}
+.sec-tag{font-family:var(--fh);font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.sec-tag-gold{color:#f5b61f}
+.sec-title{font-family:var(--fh);font-size:32px;font-weight:800;line-height:1.22;color:var(--blue2);margin-bottom:.9rem}
+.sec-title-wh{color:var(--white)}
+.sec-sub{color:var(--muted);font-size:15px;line-height:1.72;max-width:600px;margin-bottom:2rem}
+.sec-sub-wh{color:rgba(255,255,255,.75)}
+.sec-hrow{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:2.5rem;gap:1rem}
+.link-more{font-size:13px;font-weight:700;color:var(--green);text-decoration:none;cursor:pointer;font-family:var(--fh);white-space:nowrap}
+
+/* ── GRIDS ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.g2-1{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem}
+
+/* ── PRODUCT CARDS ── */
+.pcard{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
+.pcard:hover{box-shadow:0 8px 32px rgba(46,49,145,.1);transform:translateY(-3px)}
+.pcard-top-stripe{height:4px;border-radius:4px 4px 0 0;margin:-1.5rem -1.5rem 1.25rem}
+.pcard-logo{height:36px;margin-bottom:.75rem;display:flex;align-items:center}
+.pcard-logo-text{font-family:var(--fh);font-size:18px;font-weight:800}
+.pcard-logo-text span{color:var(--green)}
+.pcard-outcome{font-size:12px;font-weight:700;color:var(--green);margin-bottom:.4rem;display:flex;align-items:center;gap:5px;font-family:var(--fh)}
+.pcard-outcome::before{content:'↑';font-size:13px}
+.pcard-name{font-family:var(--fh);font-size:16px;font-weight:800;color:var(--blue);margin-bottom:.4rem}
+.pcard-tag{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:.75rem;font-family:var(--fh)}
+.pcard-desc{font-size:13px;color:var(--muted);line-height:1.65;flex:1}
+.pcard-link{display:inline-flex;align-items:center;gap:5px;margin-top:14px;font-size:13px;font-weight:700;color:var(--blue);cursor:pointer;font-family:var(--fh)}
+.pcard-link:hover{color:var(--green)}
+
+/* ── FEATURE CARDS ── */
+.fcard{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border)}
+.fcard-dark{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.5rem}
+.fcard-icon{font-size:26px;margin-bottom:10px}
+.fcard-name{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:5px}
+.fcard-name-wh{color:var(--white)}
+.fcard-desc{font-size:13px;color:var(--muted);line-height:1.65}
+.fcard-desc-wh{font-size:13px;color:rgba(255,255,255,.65);line-height:1.65}
+
+/* ── TESTIMONIALS ── */
+.tcard{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border)}
+.tcard-dark{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.5rem}
+.qmark{font-size:38px;color:var(--gold);line-height:1;margin-bottom:6px;font-family:Georgia,serif}
+.qtext{font-size:14px;color:#3a3d6e;line-height:1.72;margin-bottom:1rem;font-style:italic}
+.qtext-wh{font-size:14px;color:rgba(255,255,255,.78);line-height:1.72;margin-bottom:1rem;font-style:italic}
+.qauthor{font-weight:700;font-size:13px;color:var(--blue2);font-family:var(--fh)}
+.qauthor-wh{font-weight:700;font-size:13px;color:var(--white);font-family:var(--fh)}
+.qschool{font-size:12px;color:var(--muted)}
+.qschool-wh{font-size:12px;color:rgba(255,255,255,.5)}
+
+/* ── NEWS ── */
+.ncard{border-radius:14px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s}
+.ncard:hover{box-shadow:0 6px 24px rgba(46,49,145,.1)}
+.nimg{aspect-ratio:16/9;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;border-bottom:1px solid var(--border);position:relative}
+.nbadge{position:absolute;bottom:10px;left:10px;background:var(--blue);color:var(--white);font-size:10px;font-weight:700;padding:3px 9px;border-radius:10px}
+.nbody{padding:1.25rem}
+.ntitle{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);line-height:1.5;margin-bottom:6px}
+.ndate{font-size:12px;color:var(--muted)}
+
+/* ── AWARDS ── */
+.award-card{background:var(--light);border-radius:12px;padding:1.25rem;border:1px solid var(--border);text-align:center}
+.award-icon{font-size:28px;margin-bottom:10px}
+.award-name{font-size:13px;font-weight:700;color:var(--blue2);margin-bottom:4px;font-family:var(--fh);line-height:1.4}
+.award-org{font-size:11px;color:var(--muted)}
+
+/* ── CTA STRIP ── */
+.cta-strip{background:var(--blue);padding:56px 2.5rem;text-align:center}
+.cta-strip h2{font-family:var(--fh);font-size:30px;font-weight:800;color:var(--white);margin-bottom:.7rem}
+.cta-strip p{color:rgba(255,255,255,.82);font-size:15px;margin-bottom:1.75rem}
+.cta-btns{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.btn-wh{background:var(--white);color:var(--blue);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:800;padding:13px 28px;border-radius:8px;transition:opacity .2s}
+.btn-wh:hover{opacity:.9}
+.btn-ghost{background:transparent;color:var(--white);border:2px solid rgba(255,255,255,.45);cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:600;padding:11px 24px;border-radius:8px}
+
+/* ── BUTTONS ── */
+.btn-blue{background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:700;padding:13px 28px;border-radius:8px;transition:background .2s}
+.btn-blue:hover{background:var(--blue2)}
+.btn-green{background:var(--green);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:700;padding:13px 28px;border-radius:8px;transition:background .2s}
+.btn-green:hover{background:var(--green3)}
+.btn-outline-blue{background:transparent;color:var(--blue);border:2px solid var(--blue);cursor:pointer;font-family:var(--fh);font-size:14px;font-weight:600;padding:11px 24px;border-radius:8px;transition:all .2s;display:flex;align-items:center;gap:8px}
+.btn-outline-blue:hover{background:var(--blue);color:var(--white)}
+
+/* ── BREADCRUMB ── */
+.breadcrumb{background:var(--blue);padding:10px 2.5rem;display:flex;align-items:center;gap:6px}
+.breadcrumb span{font-size:12px;color:rgba(255,255,255,.4)}
+.breadcrumb a{font-size:12px;color:rgba(255,255,255,.65);text-decoration:none;cursor:pointer;font-weight:500}
+.breadcrumb a:hover{color:var(--white)}
+
+/* ── PAGE HERO ── */
+.page-hero{background:var(--blue);padding:64px 2.5rem}
+.page-hero-tag{display:inline-block;background:rgba(245,182,31,.15);color:#f5b61f;font-size:11px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:1rem;border:1px solid rgba(245,182,31,.3);font-family:var(--fh)}
+.page-hero h1{font-family:var(--fh);font-size:36px;font-weight:800;color:var(--white);line-height:1.2;margin-bottom:.8rem;max-width:660px}
+.page-hero p{color:rgba(255,255,255,.78);font-size:15px;line-height:1.72;max-width:580px;margin-bottom:1.75rem}
+
+/* ── PRODUCT PAGE LOGO ── */
+.prod-logo-hero{height:52px;width:auto;margin-bottom:1.25rem;filter:brightness(0) invert(1)}
+
+/* ── FAQ ── */
+.faq-item{border-bottom:1px solid var(--border);padding:1rem 0;cursor:pointer}
+.faq-q{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.faq-a{font-size:13px;color:var(--muted);line-height:1.7;margin-top:8px;display:none}
+.faq-item.open .faq-a{display:block}
+.faq-chev{font-size:18px;color:var(--green);transition:transform .2s;flex-shrink:0}
+.faq-item.open .faq-chev{transform:rotate(45deg)}
+
+/* ── TABS ── */
+.cur-tabs{display:flex;gap:8px;margin-bottom:1.5rem;flex-wrap:wrap}
+.cur-tab{font-size:13px;font-weight:600;font-family:var(--fh);padding:7px 18px;border-radius:8px;border:1.5px solid var(--border);background:var(--white);color:var(--muted);cursor:pointer;transition:all .2s}
+.cur-tab.active{background:var(--blue);color:var(--white);border-color:var(--blue)}
+.cur-panel{display:none}.cur-panel.active{display:block}
+.cur-table{width:100%;border-collapse:collapse;font-size:13px}
+.cur-table th{background:var(--blue);color:var(--white);padding:10px 14px;text-align:left;font-weight:700;font-family:var(--fh)}
+.cur-table td{padding:9px 14px;border-bottom:1px solid var(--border);color:var(--muted)}
+.cur-table tr:nth-child(even) td{background:var(--light)}
+
+/* ── PHOTO SCROLLER ── */
+.photo-scroller{display:flex;gap:12px;overflow-x:auto;padding:2px 2px 10px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
+.photo-scroller::-webkit-scrollbar{height:6px}
+.photo-scroller::-webkit-scrollbar-thumb{background:var(--border);border-radius:10px}
+.photo-scroller>*{flex:0 0 200px;scroll-snap-align:start}
+.photo-scroller img{width:100%;height:150px;object-fit:cover;border-radius:10px;display:block}
+.photo-slot-add{height:150px;border-radius:10px;border:2px dashed var(--border);background:var(--white);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--muted);font-size:11px;text-align:center;padding:.5rem}
+.photo-slot-add span{font-size:20px;color:var(--border)}
+
+/* ── BENEFIT ROWS ── */
+.benefit-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem}
+.benefit-row.flip{direction:rtl}
+.benefit-row.flip>*{direction:ltr}
+.benefit-img{background:var(--blue2);border-radius:16px;aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:60px;gap:12px}
+.benefit-img span{font-family:var(--fh);font-size:13px;font-weight:600;color:rgba(255,255,255,.55);text-align:center;padding:0 1.5rem}
+.check-list{list-style:none;margin-top:.75rem}
+.check-list li{font-size:14px;color:var(--blue2);padding:5px 0 5px 26px;position:relative;line-height:1.5}
+.check-list li::before{content:'✓';position:absolute;left:0;color:var(--green);font-weight:800}
+
+/* ── CONTACT FORM ── */
+.form-box{background:var(--white);border-radius:16px;padding:2rem;border:1px solid var(--border);box-shadow:0 4px 24px rgba(46,49,145,.07)}
+.form-box h3{font-family:var(--fh);font-size:20px;font-weight:800;color:var(--blue2);margin-bottom:.4rem}
+.form-box p{font-size:14px;color:var(--muted);margin-bottom:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.form-group{margin-bottom:12px}
+.form-group label{display:block;font-size:11px;font-weight:700;color:var(--blue2);margin-bottom:5px;text-transform:uppercase;letter-spacing:.5px;font-family:var(--fh)}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:11px 14px;border:1.5px solid var(--border);border-radius:8px;font-family:var(--fb);font-size:14px;color:var(--blue2);background:var(--white);outline:none;transition:border-color .2s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--blue)}
+.form-group textarea{resize:vertical;min-height:90px}
+.form-submit{width:100%;background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:15px;font-weight:700;padding:14px;border-radius:8px;margin-top:6px;transition:background .2s}
+.form-submit:hover{background:var(--blue2)}
+.office-card{background:var(--light);border-radius:10px;padding:1rem;border:1px solid var(--border)}
+.office-city{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--blue);margin-bottom:3px}
+.office-addr{font-size:12px;color:var(--muted);line-height:1.6}
+
+/* ── AI SECTION ── */
+.ai-section{background:var(--blue2);padding:72px 2.5rem;position:relative;overflow:hidden}
+.sec-blue .sec-tag,.sec-dark .sec-tag,.ai-section .sec-tag{color:#f5b61f}
+.sec-blue .link-more,.sec-dark .link-more,.ai-section .link-more{color:#f5b61f}
+.ai-section::before{content:'AI';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-family:var(--fh);font-size:250px;font-weight:800;color:rgba(255,255,255,.03);line-height:1;pointer-events:none}
+.ai-card{background:rgba(255,255,255,.07);border-radius:14px;padding:1.5rem;border:1px solid rgba(255,255,255,.12);transition:background .2s}
+.ai-card:hover{background:rgba(255,255,255,.12)}
+.ai-card-icon{font-size:28px;margin-bottom:10px}
+.ai-card-title{font-family:var(--fh);font-size:15px;font-weight:700;color:var(--white);margin-bottom:6px}
+.ai-card-desc{font-size:13px;color:rgba(255,255,255,.68);line-height:1.65}
+.ai-pulse{display:inline-flex;align-items:center;gap:5px;background:rgba(245,182,31,.15);color:#f5b61f;font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:3px 10px;border-radius:20px;margin-bottom:.6rem;border:1px solid rgba(245,182,31,.3);font-family:var(--fh)}
+.ai-dot{width:5px;height:5px;background:#f5b61f;border-radius:50%;animation:pulse 1.8s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.ai-cta-bar{margin-top:2rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.ai-cta-bar h3{font-family:var(--fh);font-size:17px;font-weight:700;color:var(--white);margin-bottom:4px}
+.ai-cta-bar p{font-size:13px;color:rgba(255,255,255,.58)}
+
+/* ── VIDEO GALLERY ── */
+.vgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;margin-top:2.5rem}
+.vcard{background:rgba(255,255,255,.07);border-radius:12px;border:1px dashed rgba(255,255,255,.2);overflow:hidden;cursor:pointer;transition:background .2s}
+.vcard:hover{background:rgba(255,255,255,.12)}
+.vthumb{aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;position:relative;padding:1.5rem}
+.vcard-label{font-size:12px;color:rgba(255,255,255,.58);text-align:center;padding:.5rem .75rem .75rem}
+
+/* ── IFP SECTION (HOME) ── */
+.ifp-section{background:var(--blue2);padding:72px 2.5rem}
+.ifp-partner{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:1.75rem;transition:background .2s}
+.ifp-partner:hover{background:rgba(255,255,255,.12)}
+.ifp-icon{width:54px;height:54px;background:rgba(245,182,31,.12);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:1rem;border:1px solid rgba(245,182,31,.2)}
+.ifp-name{font-family:var(--fh);font-size:17px;font-weight:800;color:var(--white);margin-bottom:.4rem}
+.ifp-type{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#f5b61f;margin-bottom:.75rem;font-family:var(--fh)}
+.ifp-desc{font-size:13px;color:rgba(255,255,255,.62);line-height:1.68}
+.ifp-feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
+.ifp-feat{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:1.25rem;text-align:center}
+.ifp-feat-icon{font-size:26px;margin-bottom:8px}
+.ifp-feat-title{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--white);margin-bottom:4px}
+.ifp-feat-desc{font-size:12px;color:rgba(255,255,255,.52);line-height:1.6}
+
+/* ── PHYGITAL STRIP ── */
+.phygital-strip{background:var(--green);padding:24px 2.5rem;display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap}
+.phygital-strip h3{font-family:var(--fh);font-size:17px;font-weight:700;color:var(--white)}
+.phygital-strip p{font-size:13px;color:rgba(255,255,255,.82);margin-top:3px}
+
+/* ── KIT CARDS ── */
+.kit-card{border-radius:16px;overflow:hidden;border:1px solid var(--border)}
+.kit-head{padding:1.75rem}
+.kit-head h3{font-family:var(--fh);font-size:18px;font-weight:800;color:var(--white);margin-bottom:.4rem}
+.kit-head p{font-size:13px;color:rgba(255,255,255,.8);line-height:1.65}
+.kit-body{padding:1.5rem;background:var(--white)}
+.kit-item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border)}
+.kit-item:last-child{border-bottom:none}
+.kit-icon{width:32px;height:32px;border-radius:8px;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;margin-top:1px}
+.kit-name{font-size:13px;font-weight:700;color:var(--blue2);font-family:var(--fh)}
+.kit-desc{font-size:12px;color:var(--muted);margin-top:2px;line-height:1.5}
+
+/* ── PILLARS BOX ── */
+.pillars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.75rem;margin-top:1.5rem}
+.pillar-pill{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:1rem 1.25rem}
+.pillar-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--gold);margin-bottom:4px;font-family:var(--fh)}
+.pillar-body{font-size:12px;color:rgba(255,255,255,.7);line-height:1.6}
+
+/* ── PROOF ROW ── */
+.proof-row{display:flex;gap:2.5rem;flex-wrap:wrap}
+.proof-num{font-family:var(--fh);font-size:26px;font-weight:800;color:var(--blue)}
+.proof-lbl{font-size:11px;color:var(--muted);margin-top:2px;font-weight:500}
+
+/* ── IMPACT BAR (about) ── */
+.impact-bar{background:var(--blue);padding:40px 2.5rem;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.impact-item{text-align:center;padding:1rem;border-right:1px solid rgba(255,255,255,.12)}
+.impact-item:last-child{border-right:none}
+.impact-num{font-family:var(--fh);font-size:32px;font-weight:800;color:#f5b61f}
+.impact-lbl{font-size:12px;color:rgba(255,255,255,.65);margin-top:4px;font-weight:500}
+
+/* ── TOPSCHOOL SCREEN ── */
+.topschool-screen{width:100%;border-radius:14px;border:3px solid var(--blue);box-shadow:0 8px 32px rgba(46,49,145,.15)}
+.platform-feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-top:2rem}
+.pfeat{background:var(--white);border-radius:12px;padding:1.25rem;border:1px solid var(--border)}
+.pfeat-icon{font-size:24px;margin-bottom:8px}
+.pfeat-name{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:4px}
+.pfeat-desc{font-size:12px;color:var(--muted);line-height:1.65}
+
+/* ── ACADEMICS BAND ── */
+.acad-band{background:var(--blue2);padding:40px 2.5rem}
+.acad-stat{text-align:center}
+.acad-num{font-family:var(--fh);font-size:32px;font-weight:800;color:#ffffff}
+.acad-lbl{font-size:12px;color:rgba(255,255,255,.65);margin-top:4px;font-weight:500}
+
+/* ── STAKEHOLDER TABS ── */
+.s-tabs{display:flex;gap:8px;margin-bottom:1.5rem}
+.s-tab{font-size:13px;font-weight:600;font-family:var(--fh);padding:8px 20px;border-radius:8px;border:1.5px solid var(--border);background:var(--white);color:var(--muted);cursor:pointer;transition:all .2s}
+.s-tab.active{background:var(--green);color:var(--white);border-color:var(--green)}
+.s-panel{display:none}.s-panel.active{display:block}
+.s-inner{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start}
+
+/* ── JOB CARDS ── */
+.job-card{background:var(--white);border-radius:12px;padding:1.25rem 1.5rem;border:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;gap:1rem;transition:box-shadow .2s;cursor:pointer}
+.job-card:hover{box-shadow:0 4px 16px rgba(46,49,145,.1)}
+.job-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:4px}
+.job-meta{display:flex;gap:8px;flex-wrap:wrap}
+.job-tag{font-size:11px;font-weight:600;padding:3px 10px;border-radius:10px;background:var(--light);color:var(--muted);font-family:var(--fh)}
+.job-apply{background:var(--blue);color:var(--white);border:none;cursor:pointer;font-family:var(--fh);font-size:13px;font-weight:700;padding:9px 20px;border-radius:8px}
+.jobs-grid{display:grid;gap:1rem;margin-top:2rem}
+
+/* ── BLOG/SUPPORT ── */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.bcard{border-radius:14px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s}
+.bcard:hover{box-shadow:0 6px 24px rgba(46,49,145,.1)}
+.bimg{aspect-ratio:16/9;background:var(--light);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--border);position:relative}
+.bbody{padding:1.25rem}
+.btag{display:inline-block;background:rgba(27,138,115,.1);color:var(--green);font-size:10px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;padding:3px 9px;border-radius:10px;margin-bottom:8px;font-family:var(--fh)}
+.btitle{font-family:var(--fh);font-size:13px;font-weight:700;color:var(--blue2);line-height:1.5;margin-bottom:8px}
+.bmeta{font-size:12px;color:var(--muted)}
+.support-card{background:var(--white);border-radius:14px;padding:1.5rem;border:1px solid var(--border);text-align:center}
+.support-icon{font-size:36px;margin-bottom:12px}
+.support-title{font-family:var(--fh);font-size:14px;font-weight:700;color:var(--blue2);margin-bottom:6px}
+.support-desc{font-size:13px;color:var(--muted);line-height:1.65;margin-bottom:1rem}
+.support-btn{display:inline-block;background:var(--light);color:var(--blue2);font-size:13px;font-weight:600;padding:8px 18px;border-radius:8px;cursor:pointer;border:1px solid var(--border);font-family:var(--fh)}
+
+/* ── CONCLAVE ── */
+.cimg{aspect-ratio:16/9;background:var(--blue2);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;position:relative}
+.cimg-year{font-family:var(--fh);font-size:48px;font-weight:800;color:rgba(255,255,255,.12)}
+.cimg-title{font-family:var(--fh);font-size:18px;font-weight:700;color:var(--white);text-align:center;padding:0 2rem}
+.conclave-body{padding:1.25rem;background:var(--white)}
+.ctitle{font-family:var(--fh);font-size:15px;font-weight:700;color:var(--blue2);margin-bottom:6px}
+.cmeta{font-size:13px;color:var(--muted);margin-bottom:8px}
+.clink{font-size:13px;font-weight:700;color:var(--green);cursor:pointer;font-family:var(--fh)}
+.conclave-card{border-radius:16px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:box-shadow .2s}
+.conclave-card:hover{box-shadow:0 8px 32px rgba(46,49,145,.1)}
+
+/* ── FOOTER ── */
+footer{background:#0A4B9B;padding:15px 0.8rem 28px}
+.footer-nel-accent{color:#0F9BD7;font-weight:800}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.5rem}
+.footer-logo-wrap{height:48px;margin-bottom:12px;display:flex;align-items:center}
+.footer-logo-wrap img{height:48px;width:auto}
+.footer-tagline{color:rgba(255,255,255,.5);font-size:13px;line-height:1.72;max-width:280px}
+.fcol h4{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:14px;font-family:var(--fh)}
+.fcol a{display:block;color:rgba(255,255,255,.62);font-size:13px;text-decoration:none;margin-bottom:8px;cursor:pointer;font-weight:500}
+.fcol a:hover{color:var(--white)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:20px;display:flex;justify-content:space-between;align-items:center}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.28)}
+.socials{display:flex;gap:10px}
+.sdot{width:32px;height:32px;background:rgba(255,255,255,.08);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:rgba(255,255,255,.5);cursor:pointer;border:1px solid rgba(255,255,255,.1)}
+
+/* ── INLINE SVG LOGOS ── */
+.logo-ntt{font-family:'Montserrat',sans-serif;font-weight:800;font-size:inherit;line-height:1}
+.logo-ntt .n{color:#2e3191}.logo-ntt .t{color:#1b8a73}
+.prod-name-blue{font-family:'Montserrat',sans-serif;font-weight:800;color:#2e3191}
+.prod-name-green{font-family:'Montserrat',sans-serif;font-weight:800;color:#1b8a73}
+
+/* ── MISC ── */
+.pill-active{background:var(--blue);color:var(--white);display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 12px;border-radius:20px;margin-right:6px;margin-bottom:6px;cursor:pointer;font-family:var(--fh)}
+.pill-inactive{background:var(--light);color:var(--muted);border:1px solid var(--border);display:inline-block;font-size:11px;font-weight:700;letter-spacing:.5px;padding:4px 12px;border-radius:20px;margin-right:6px;margin-bottom:6px;cursor:pointer;font-family:var(--fh)}
+.divider{height:3px;background:var(--blue),var(--green),transparent;margin:0}
+.section-accent{border-left:4px solid var(--green);padding-left:1rem}
+.highlight-box{background:var(--blue),rgba(27,138,115,.06);border:1px solid var(--border);border-radius:12px;padding:1.5rem}
+.green-dot{display:inline-block;width:8px;height:8px;background:var(--green);border-radius:50%;margin-right:8px}
+
+/* ── SCHOOL LOGOS STRIP ── */
+.schools-strip{background:var(--white);padding:48px 0;overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.schools-strip-inner{padding:0 2.5rem;text-align:center;margin-bottom:1.5rem}
+.schools-strip-inner .sec-tag{display:block}
+.schools-strip-inner h2{font-family:var(--fh);font-size:24px;font-weight:800;color:var(--blue2)}
+.schools-strip-inner p{font-size:14px;color:var(--muted);margin-top:6px}
+.scroll-track-wrap{overflow:hidden;position:relative}
+.scroll-track-wrap::before,.scroll-track-wrap::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
+.scroll-track-wrap::before{left:0;background:linear-gradient(to right,var(--white),transparent)}
+.scroll-track-wrap::after{right:0;background:linear-gradient(to left,var(--white),transparent)}
+.scroll-track{display:flex;gap:0;animation:scrollLeft 40s linear infinite;width:max-content}
+.scroll-track:hover{animation-play-state:paused}
+@keyframes scrollLeft{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.school-logo-item{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:140px;padding:12px 20px;gap:8px;cursor:default}
+.school-logo-badge{width:72px;height:72px;border-radius:50%;background:var(--light);border:2px solid var(--border);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-size:11px;font-weight:800;color:var(--blue);text-align:center;line-height:1.2;padding:8px;transition:border-color .2s,background .2s}
+.school-logo-badge:hover{border-color:var(--blue);background:rgba(46,49,145,.05)}
+.school-logo-name{font-size:11px;color:var(--muted);text-align:center;font-weight:500;max-width:120px;line-height:1.3}
+
+</style>
+
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"NAVNEET TOPTECH","alternateName":"NTT","url":"https://navneettoptech.com","logo":"https://navneettoptech.com/assets/logo.png","description":"India's School Transformation Partner — EdTech arm of Navneet Education Limited. Partnering with 4,000+ CBSE and Maharashtra State Board schools.","telephone":"+911800266676","email":"info@navneettoptech.com","sameAs":["https://www.facebook.com/navneettoptech","https://www.linkedin.com/company/navneet-toptech","https://www.youtube.com/c/navneettoptech"]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Service","serviceType":"School EdTech Onboarding & Support","provider":{"@type":"Organization","name":"NAVNEET TOPTECH","url":"https://navneettoptech.com"},"areaServed":{"@type":"Country","name":"India"},"description":"On-site support and stationed services for schools using NAVNEET TOPTECH products — covering onboarding, remote support, teacher training, curriculum support, and progress reporting.","hasOfferCatalog":{"@type":"OfferCatalog","name":"Support & Services","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"1:1 Online Sessions for Teachers"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Immediate Remote Support"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Technology Adoption Strategy"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Swift Content & Syllabus Updates"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Experienced Technical Team"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Teacher Training & Workshops"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Academic Support & Progress Reports"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"School Activity Support"}}]}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How long does onboarding take?","acceptedAnswer":{"@type":"Answer","text":"Our product onboarding team completes full implementation within 10 working days."}},{"@type":"Question","name":"How can schools reach support after onboarding?","acceptedAnswer":{"@type":"Answer","text":"Schools can reach the support team anytime via a toll-free number, dedicated support email, or WhatsApp group."}},{"@type":"Question","name":"How much teacher training is provided each year?","acceptedAnswer":{"@type":"Answer","text":"Around 25 hours of training programs are provided every academic year to keep staff up to date, along with completion certificates for teacher workshops."}}]}
+</script>
+</head>
+<body>
+
+   <!-- NAV -->
+    <nav>
+      <div class="nav-logo" onclick="goPage('home')">
+        <svg
+          width="180"
+          height="44"
+          viewBox="0 0 360 88"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <text
+            x="0"
+            y="32"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="28"
+            fill="#2e3191"
+          >
+            nav
+          </text>
+          <text
+            x="62"
+            y="32"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="28"
+            fill="#2e3191"
+          >
+            N
+          </text>
+          <text
+            x="84"
+            y="32"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="22"
+            fill="#2e3191"
+          >
+            EET
+          </text>
+          <text
+            x="0"
+            y="75"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#2e3191"
+          >
+            T
+          </text>
+          <circle
+            cx="42"
+            cy="55"
+            r="22"
+            fill="none"
+            stroke="#2e3191"
+            stroke-width="2"
+          />
+          <circle cx="42" cy="55" r="22" fill="url(#globeGrad)" opacity="0.9" />
+          <defs>
+            <radialGradient id="globeGrad" cx="40%" cy="40%">
+              <stop offset="0%" stop-color="#2e3191" />
+              <stop offset="100%" stop-color="#1b8a73" />
+            </radialGradient>
+          </defs>
+          <text
+            x="68"
+            y="75"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#2e3191"
+          >
+            P
+          </text>
+          <text
+            x="113"
+            y="75"
+            font-family="Montserrat,sans-serif"
+            font-weight="800"
+            font-size="42"
+            fill="#1b8a73"
+          >
+            TECH
+          </text>
+        </svg>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <span>About Us ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('about')">About NTT</a>
+            <a
+              onclick="window.open('https://navneet.com')"
+              rel="noopener noreferrer"
+              >About NEL ↗</a
+            >
+            <a onclick="goPage('news')">Awards</a>
+          </div>
+        </li>
+        <li>
+          <span>Our Products ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('topschool')">TopSchool LMS</a>
+            <a
+              onclick="goPage('topseries')"
+              style="padding-left: 32px; font-size: 12px; color: var(--muted)"
+              >↳ TopSeries</a
+            >
+            <a onclick="goPage('topclass')">TopClass</a>
+            <a onclick="goPage('topassess')">TopAssess</a>
+            <a onclick="goPage('ifp')">Hardware & IFP</a>
+          </div>
+        </li>
+        <li>
+          <span>Events ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('conclaves')">Conclaves</a>
+            <a onclick="goPage('conclaves')">Expos</a>
+            <a onclick="goPage('conclaves')">Contests</a>
+          </div>
+        </li>
+        <li>
+          <span>Blogs ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('news')">In the News</a>
+            <a onclick="goPage('blogs')">Blogs</a>
+          </div>
+        </li>
+        <li>
+          <span>Contact ▾</span>
+          <div class="dropdown">
+            <a onclick="goPage('contact')">Contact Us</a>
+            <a onclick="goPage('careers')">Careers</a>
+            <a onclick="goPage('support')">Support & Services</a>
+          </div>
+        </li>
+        <li>
+          <a
+            onclick="window.open('http://nityatraining.com')"
+            rel="noopener noreferrer"
+            style="color: var(--green); font-weight: 700"
+            >Nitya Training ↗</a
+          >
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <a class="nav-sup" href="https://navneetfoundation.in" target="_blank"
+          >Support a Child ↗</a
+        >
+        <button class="nav-cta" onclick="goPage('contact')">
+          Book a Free Demo
+        </button>
+      </div>
+    </nav>
+
+<div id="page-support" class="page active">
+  <div class="breadcrumb"><a onclick="goPage('home')">Home</a><span>/</span><span>Support & Services</span></div>
+  <div class="page-hero">
+    <div class="page-hero-tag">Support & Services · Onboarding · Training</div>
+    <h1>On-Site Support, Stationed Services.</h1>
+    <p>With 65+ years of expertise in educational syllabi and smart curriculums, NAVNEET TOPTECH provides world-class service from the moment you onboard to every time you need support after.</p>
+    <button class="btn-gold" onclick="goPage('contact')">Talk to Our Support Team</button>
+  </div>
+
+  <!-- WHY OUR SUPPORT -->
+  <section class="sec sec-white">
+    <p class="sec-tag">Why Our Support</p>
+    <h2 class="sec-title" style="margin-bottom:1.5rem">Built Around Your School's Day-to-Day.</h2>
+    <p class="sec-sub" style="max-width:720px;margin-bottom:2rem">Our product onboarding team ensures complete implementation within 10 working days. Once onboarded, our independent support team resolves concerns promptly without disrupting your school's regular functioning — reachable anytime via toll-free number, support email, or WhatsApp.</p>
+    <div class="g3">
+      <div class="fcard"><div class="fcard-icon">🚀</div><div class="fcard-name">Expert Onboarding Team</div><div class="fcard-desc">Complete implementation within 10 working days, handled by a dedicated onboarding team.</div></div>
+      <div class="fcard"><div class="fcard-icon">🛠️</div><div class="fcard-name">Independent Support Team</div><div class="fcard-desc">Prompt resolution of concerns without disrupting your school's day-to-day functioning.</div></div>
+      <div class="fcard"><div class="fcard-icon">📞</div><div class="fcard-name">Always Reachable</div><div class="fcard-desc">Toll-free number, dedicated support email, and a WhatsApp group — whichever works for you.</div></div>
+    </div>
+  </section>
+
+  <!-- WHAT WE OFFER -->
+  <section class="sec sec-light">
+    <p class="sec-tag">What We Offer</p>
+    <h2 class="sec-title" style="margin-bottom:2rem">Support That Goes Beyond the Product.</h2>
+    <div class="g4">
+      <div class="fcard"><div class="fcard-icon">💻</div><div class="fcard-name">1:1 Online Sessions</div><div class="fcard-desc">Customised online sessions for teachers who need help using the platform effectively.</div></div>
+      <div class="fcard"><div class="fcard-icon">⚡</div><div class="fcard-name">Immediate Remote Support</div><div class="fcard-desc">Fast remote assistance so your team gets help exactly when they need it.</div></div>
+      <div class="fcard"><div class="fcard-icon">💡</div><div class="fcard-name">Technology Strategies</div><div class="fcard-desc">Guidance to help teachers use the technology in more innovative ways in the classroom.</div></div>
+      <div class="fcard"><div class="fcard-icon">🔄</div><div class="fcard-name">Swift Content Updates</div><div class="fcard-desc">Syllabus updates and new features shared quickly, so you're never working off stale content.</div></div>
+      <div class="fcard"><div class="fcard-icon">👨‍🏫</div><div class="fcard-name">Experienced Technical Team</div><div class="fcard-desc">65+ years of syllabus and curriculum expertise, plus 12+ years building digital content.</div></div>
+      <div class="fcard"><div class="fcard-icon">🎓</div><div class="fcard-name">Teacher Training & Workshops</div><div class="fcard-desc">~25 hours of training every academic year, plus workshops on classroom management and teaching strategies with certificates of completion.</div></div>
+      <div class="fcard"><div class="fcard-icon">📊</div><div class="fcard-name">Academic Support & Progress Reports</div><div class="fcard-desc">Year-round academic and curriculum support, plus multiple report formats to track student progress on an ongoing basis.</div></div>
+      <div class="fcard"><div class="fcard-icon">🎉</div><div class="fcard-name">School Activity Support</div><div class="fcard-desc">Help planning and executing activities like Science Day, carnivals, and student conferences.</div></div>
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <h2>See the Difference for Your School.</h2>
+    <p>From onboarding to ongoing support, we're with you at every step. Let's talk about what your school needs.</p>
+    <div class="cta-btns"><button class="btn-wh" onclick="goPage('contact')">Contact Us</button></div>
+  </section>
+</div>
+
+ <!-- ═══ SHARED FOOTER TEMPLATE ═══ -->
+    <template id="footer-tpl">
+      <footer style="background: #061e3e">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+            gap: 2.5rem;
+            margin-bottom: 2.5rem;
+            padding: 12px 1.9rem 0;
+          "
+         >
+          <!-- BRAND COL -->
+          <div>
+            <div class="footer-logo-wrap">
+              <svg
+                width="180"
+                height="44"
+                viewBox="0 0 360 88"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <text
+                  x="0"
+                  y="32"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="26"
+                  fill="white"
+                >
+                  nav
+                </text>
+                <text
+                  x="58"
+                  y="32"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="26"
+                  fill="white"
+                >
+                  N
+                </text>
+                <text
+                  x="79"
+                  y="32"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="21"
+                  fill="white"
+                >
+                  EET
+                </text>
+                <text
+                  x="0"
+                  y="74"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="40"
+                  fill="white"
+                >
+                  T
+                </text>
+                <circle cx="40" cy="55" r="20" fill="#0F9BD7" />
+                <text
+                  x="64"
+                  y="74"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="40"
+                  fill="white"
+                >
+                  P
+                </text>
+                <text
+                  x="107"
+                  y="74"
+                  font-family="Montserrat,sans-serif"
+                  font-weight="800"
+                  font-size="40"
+                  fill="#0F9BD7"
+                >
+                  TECH
+                </text>
+              </svg>
+            </div>
+            <p
+              style="
+                color: rgba(255, 255, 255, 0.72);
+                font-size: 13px;
+                line-height: 1.72;
+                margin-top: 12px;
+                max-width: 280px;
+              "
+            >
+              India's School Transformation Partner — the EdTech arm of
+              <span style="color: #0f9bd7; font-weight: 700"
+                >Navneet Education Limited</span
+              >. Combining 65+ years of educational expertise with technology
+              built for Indian classrooms.
+            </p>
+            <div class="socials" style="margin-top: 16px">
+              <div class="sdot">Fb</div>
+              <div class="sdot">Tw</div>
+              <div class="sdot">Yt</div>
+              <div class="sdot">Ig</div>
+              <div class="sdot">Li</div>
+            </div>
+            <div
+    class="mobile-no-border"
+    style="
+        margin-top: 1.25rem;
+        padding-top: 1.25rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    "
+>
+              <div class="products-label"
+                style="
+                  font-size: 10px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  letter-spacing: 1.2px;
+                  color: #0f9bd7;
+                  margin-bottom: 10px;
+                  font-family: var(--fh);
+                "
+              >
+                Contact
+              </div>
+              <div
+                style="
+                  font-size: 13px;
+                  color: rgba(255, 255, 255, 0.85);
+                  margin-bottom: 6px;
+                "
+              >
+                📞 1800 266 6676 (Toll Free)
+              </div>
+              <div style="font-size: 13px; color: rgba(255, 255, 255, 0.85)">
+                ✉️ info@navneettoptech.com
+              </div>
+            </div>
+          </div>
+
+          <!-- PRODUCTS -->
+          <div>
+            <div  class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Products
+            </div>
+            <a
+              onclick="goPage('topschool')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >TopSchool LMS</a
+            >
+            <a
+              onclick="goPage('topseries')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.65);
+                font-size: 12px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                padding-left: 0.85rem;
+              "
+              >↳ TopSeries</a
+            >
+            <a
+              onclick="goPage('topclass')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >TopClass</a
+            >
+            <a
+              onclick="goPage('topassess')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >TopAssess</a
+            >
+            <a
+              onclick="goPage('ifp')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Hardware & IFP</a
+            >
+            <a
+              onclick="window.open('http://nityatraining.com')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Nitya Training ↗</a
+            >
+            <a
+              onclick="window.open('http://navneetedu.ai')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Navneet AI ↗</a
+            >
+          </div>
+
+          <!-- COMPANY -->
+          <div>
+            <div class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Company
+            </div>
+            <a
+              onclick="goPage('about')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >About NTT</a
+            >
+            <a
+              onclick="window.open('https://navneet.com')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: #0f9bd7;
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 600;
+              "
+              >About NEL ↗</a
+            >
+            <a
+              onclick="goPage('news')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Awards & News</a
+            >
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Events</a
+            >
+            <a
+              onclick="goPage('careers')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Careers</a
+            >
+            <a
+              onclick="goPage('blogs')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Blogs</a
+            >
+          </div>
+
+          <!-- EVENTS -->
+          <div>
+            <div class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Events
+            </div>
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Conclaves</a
+            >
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Expos</a
+            >
+            <a
+              onclick="goPage('conclaves')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Contests</a
+            >
+            <a
+              onclick="goPage('news')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >In the News</a
+            >
+          </div>
+
+          <!-- SUPPORT -->
+          <div>
+            <div class="products-label"
+              style="
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+                color: #0f9bd7;
+                margin-bottom: 16px;
+                font-family: var(--fh);
+              "
+            >
+              Support
+            </div>
+            <a
+              onclick="goPage('contact')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Contact Us</a
+            >
+            <a
+              onclick="goPage('support')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Support & Services</a
+            >
+            <a
+              onclick="window.open('https://navneetfoundation.in')"
+              rel="noopener noreferrer"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Support a Child ↗</a
+            >
+            <a
+              onclick="goPage('careers')"
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.88);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: pointer;
+                font-weight: 500;
+              "
+              >Careers</a
+            >
+            <a
+              style="
+                display: block;
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 13px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                cursor: default;
+              "
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div
+          style="
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+          "
+        >
+          <p
+            style="font-size: 12px; color: rgba(255, 255, 255, 0.5); margin: 0"
+          >
+            © 2026 NAVNEET TOPTECH. All Rights Reserved. · A 100% Subsidiary of
+            <span style="color: #0f9bd7; font-weight: 600"
+              >Navneet Education Limited</span
+            >
+          </p>
+
+          <p
+            style="font-size: 12px; color: rgba(255, 255, 255, 0.5); margin: 0"
+          >
+            Mumbai · Bengaluru · Delhi · Chennai · Hyderabad · Nashik
+          </p>
+        </div>
+      </footer>
+    </template>
+<script>
+function goPage(id){ /* standalone preview -- full site navigation lives in the main prototype file */ }
+function toggleFaq(el){el.classList.toggle('open')}
+function switchCur(tab,id){
+  const root=tab.closest('section');
+  root.querySelectorAll('.cur-tab').forEach(t=>t.classList.remove('active'));
+  root.querySelectorAll('.cur-panel').forEach(p=>p.classList.remove('active'));
+  tab.classList.add('active');
+  root.querySelector('#cur-'+id).classList.add('active');
+}
+function switchS(tab,id){
+  const root=tab.closest('section');
+  root.querySelectorAll('.s-tab').forEach(t=>t.classList.remove('active'));
+  root.querySelectorAll('.s-panel').forEach(p=>p.classList.remove('active'));
+  tab.classList.add('active');
+  root.querySelector('#s-'+id).classList.add('active');
+}
+</script>
+</body>
+</html>

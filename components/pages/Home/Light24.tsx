@@ -93,12 +93,13 @@ export default function Light24() {
               Yearly and Semester Kits for grades 1 to 5, integrated with
               Navneet TopSchool for a seamless phygital learning experience.
             </div>
-            <span
+            <a
               className="pcard-link"
-              onclick="
-                event.stopPropagation();
-                goPage('topseries');
-              ">Explore TopSeries →</span>
+              href="/topseries"
+              style={{ textDecoration: 'none' }}
+            >
+              Explore TopSeries →
+            </a>
           </div>
           <div className="pcard">
             <div
@@ -120,10 +121,15 @@ export default function Light24() {
               just 2–3 hours of flexible learning. Helps educators build
               practical skills aligned with today's educational needs.
             </div>
-            <span
+            <a
               className="pcard-link"
-              onclick="window.open('http://nityatraining.com')"
-              rel="noopener noreferrer">Visit Nitya ↗</span>
+              href="http://nityatraining.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              Visit Nitya ↗
+            </a>
           </div>
           <div className="pcard">
             <div
@@ -141,10 +147,15 @@ export default function Light24() {
               general-purpose AI. Personalised learning pathways based on each
               student's performance, pace, and curriculum alignment.
             </div>
-            <span
+            <a
               className="pcard-link"
-              onclick="window.open('http://navneetedu.ai')"
-              rel="noopener noreferrer">Explore Navneet AI ↗</span>
+              href="http://navneetedu.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: 'none' }}
+            >
+              Explore Navneet AI ↗
+            </a>
           </div>
         </div>
       </section>

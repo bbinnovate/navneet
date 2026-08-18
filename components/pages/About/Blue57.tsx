@@ -18,8 +18,9 @@ export default function Blue57() {
 
         <a
           className="btn-wh"
-          
-          rel="noopener noreferrer" href="https://navneet.com" target="_blank" rel="noopener noreferrer">
+          href="https://navneet.com"
+          target="_blank"
+          rel="noopener noreferrer">
           Visit navneet.com ↗
         </a>
       </section>

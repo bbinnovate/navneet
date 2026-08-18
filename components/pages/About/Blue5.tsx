@@ -17,9 +17,7 @@ export default function Blue5() {
           extending this legacy into the classroom of tomorrow.
         </p>
 
-        <a className="btn-wh" href="https://navneet.com" target="_blank" rel="noopener noreferrer"
-          rel="noopener noreferrer"
-         target="_blank" rel="noopener noreferrer">
+        <a className="btn-wh" href="https://navneet.com" target="_blank" rel="noopener noreferrer">
           Visit navneet.com ↗
         </a>
       </section>

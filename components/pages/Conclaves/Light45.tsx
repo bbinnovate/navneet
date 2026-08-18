@@ -17,7 +17,7 @@ export default function Light45() {
     <div id="cur-y25" className="cur-panel active">
       <div style={{ display: 'flex', alignItems: 'baseline', gap: '14px', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
         <div style={{ fontFamily: 'var(--fh)', fontSize: '28px', fontWeight: '800', color: 'var(--blue2)' }}>36 Cities</div>
-        <span onclick="window.open('https://youtu.be/ZzQoEfv3_wE?si=Sq5is4mnmpZ6hCd4')" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--green)', cursor: 'pointer', fontFamily: 'var(--fh)' }}>▶ Watch the 2025 Aftermovie →</span>
+        <a href="https://youtu.be/ZzQoEfv3_wE?si=Sq5is4mnmpZ6hCd4" target="_blank" rel="noopener noreferrer" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--green)', cursor: 'pointer', fontFamily: 'var(--fh)', textDecoration: 'none' }}>▶ Watch the 2025 Aftermovie →</a>
       </div>
       <div className="photo-scroller">
         
@@ -34,7 +34,7 @@ export default function Light45() {
     <div id="cur-y24" className="cur-panel">
       <div style={{ display: 'flex', alignItems: 'baseline', gap: '14px', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
         <div style={{ fontFamily: 'var(--fh)', fontSize: '28px', fontWeight: '800', color: 'var(--blue2)' }}>26 Cities</div>
-        <span onclick="window.open('https://youtu.be/EpXR7WBTk5U?si=N6yRMXSTOQn_m3EN')" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--green)', cursor: 'pointer', fontFamily: 'var(--fh)' }}>▶ Watch the 2024 Aftermovie →</span>
+        <a href="https://youtu.be/EpXR7WBTk5U?si=N6yRMXSTOQn_m3EN" target="_blank" rel="noopener noreferrer" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--green)', cursor: 'pointer', fontFamily: 'var(--fh)', textDecoration: 'none' }}>▶ Watch the 2024 Aftermovie →</a>
       </div>
       <div className="photo-scroller">
         
@@ -51,7 +51,7 @@ export default function Light45() {
     <div id="cur-y23" className="cur-panel">
       <div style={{ display: 'flex', alignItems: 'baseline', gap: '14px', flexWrap: 'wrap', marginBottom: '1.25rem' }}>
         <div style={{ fontFamily: 'var(--fh)', fontSize: '28px', fontWeight: '800', color: 'var(--blue2)' }}>28 Cities</div>
-        <span onclick="window.open('https://youtu.be/oeycYIE4xfo?si=yUVhYr5ubupf8YEo')" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--green)', cursor: 'pointer', fontFamily: 'var(--fh)' }}>▶ Watch the 2023 Aftermovie →</span>
+        <a href="https://youtu.be/oeycYIE4xfo?si=yUVhYr5ubupf8YEo" target="_blank" rel="noopener noreferrer" style={{ fontSize: '13px', fontWeight: '700', color: 'var(--green)', cursor: 'pointer', fontFamily: 'var(--fh)', textDecoration: 'none' }}>▶ Watch the 2023 Aftermovie →</a>
       </div>
       <div className="photo-scroller">
         <img src="https://navneettoptech.com/wp-content/uploads/2024/02/DSC_1141.jpg" alt="Conclave 2023" />

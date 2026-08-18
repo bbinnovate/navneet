@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { legacyPagePath } from "@/lib/routes";
+import { ROUTES, type RouteKey } from "@/lib/routes";
 
 type SectionName =
   | "products"
@@ -13,8 +13,8 @@ type SectionName =
 export default function Footer() {
   const [openSection, setOpenSection] = useState<SectionName | null>(null);
 
-  const goPage = useCallback((page: string) => {
-    window.location.assign(legacyPagePath(page));
+  const goPage = useCallback((page: RouteKey) => {
+    window.location.assign(ROUTES[page]);
   }, []);
 
   const toggleSection = (section: SectionName) => {

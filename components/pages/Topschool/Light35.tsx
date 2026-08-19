@@ -4,16 +4,18 @@ export default function Light35() {
     <section className="sec sec-light">
         <div className="g2" style={{ alignItems: 'center', gap: '3rem' }}>
           <div>
-            <div className="ai-pulse" style={{ marginBottom: '0.75rem' }}>
-              <span className="ai-dot"></span>AI-Enabled Assessments
-            </div>
-            <h2 className="sec-title">AI Assessments Built Into TopSchool.</h2>
-            <p className="sec-sub" style={{ marginBottom: '1rem' }}>
+
+            <div className="hero-eyebrow tag">
+      AI-Enabled Assessments
+        </div>
+           
+            <h2 className="title subtext mb-3">AI Assessments Built Into TopSchool.</h2>
+            <p className="subtext dark-text" style={{ marginBottom: '1rem' }}>
               TopAssess is integrated directly into TopSchool — AI-enabled test
               creation, instant evaluation, and performance reports that tell
               teachers exactly where each student needs support.
             </p>
-            <ul className="check-list">
+            <ul className="check-list subtitle ">
               <li>Online and offline assessment modes</li>
               <li>Chapter-wise Challenge assessments</li>
               <li>Instant performance reports per student</li>
@@ -22,21 +24,20 @@ export default function Light35() {
           </div>
           <div
             style={{ background: 'var(--blue2)', borderRadius: '14px', padding: '2rem' }}>
-            <div
-              style={{ fontFamily: 'var(--fh)', fontSize: '13px', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--gold)', marginBottom: '1rem' }}>
+            <h2 className="title white-text mb-3">
+              
               Also available with
-            </div>
+            </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               <div
                 style={{ background: 'rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '0.9rem 1rem', border: '1px solid rgba(255, 255, 255, 0.1)', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '18px' }}>📚</span>
                 <div>
-                  <div
-                    style={{ fontSize: '13px', fontWeight: '700', color: 'var(--white)' }}>
+                  <div className="title white-text mb-3">
+                    
                     TopSeries Coursebooks
                   </div>
-                  <div
-                    style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.55)' }}>
+                  <div className="subtitle white-text">
                     Bundled for Nursery to Grade 8
                   </div>
                 </div>
@@ -45,13 +46,11 @@ export default function Light35() {
                 style={{ background: 'rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '0.9rem 1rem', border: '1px solid rgba(255, 255, 255, 0.1)', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '18px' }}>🖥️</span>
                 <div>
-                  <div
-                    style={{ fontSize: '13px', fontWeight: '700', color: 'var(--white)' }}>
-                    AI-Enabled IFP Panels
+                   <div className="title white-text mb-3">
+                       AI-Enabled IFP Panels
                   </div>
-                  <div
-                    style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.55)' }}>
-                    Brio, Cybernetix, Hikvision
+                  <div className="subtitle white-text">
+                     Brio, Cybernetix, Hikvision
                   </div>
                 </div>
               </div>
@@ -59,13 +58,11 @@ export default function Light35() {
                 style={{ background: 'rgba(255, 255, 255, 0.08)', borderRadius: '10px', padding: '0.9rem 1rem', border: '1px solid rgba(255, 255, 255, 0.1)', display: 'flex', alignItems: 'center', gap: '12px' }}>
                 <span style={{ fontSize: '18px' }}>✨</span>
                 <div>
-                  <div
-                    style={{ fontSize: '13px', fontWeight: '700', color: 'var(--white)' }}>
-                    Navneet AI
+                  <div className="title white-text mb-3">
+                     Navneet AI
                   </div>
-                  <div
-                    style={{ fontSize: '12px', color: 'rgba(255, 255, 255, 0.55)' }}>
-                    Personalised learning pathways
+                  <div className="subtitle white-text">
+                      Personalised learning pathways
                   </div>
                 </div>
               </div>

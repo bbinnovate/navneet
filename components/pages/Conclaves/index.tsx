@@ -1,5 +1,5 @@
 import PageHeroSection1 from './PageHeroSection1';
-import StatsBarSection2 from './StatsBarSection2';
+import StatsBarSection2 from '@/components/StatsBarSection2';
 import White13 from './White13';
 import Light24 from './Light24';
 import White35 from './White35';

@@ -5,10 +5,9 @@ export default function White13() {
     <section className="sec sec-white">
        <div className="g2" style={{ gap: 'clamp(1rem, 1rem, 3.5rem)', alignItems: 'center' }}>
           <div>
-            <p className="sec-tag">Who We Are</p>
-            <h2 className="sec-title">Built on 65+ Years of Educational Trust.</h2>
-            <p
-              style={{ color: 'var(--muted)', fontSize: '15px', lineHeight: '1.78', marginBottom: '1.25rem' }}>
+             <p className="sec-tag green-text tag">Who We Are</p>
+            <h2 className="sec-title blue-text heading">Built on 65+ Years of Educational Trust.</h2>
+            <p className="sec-sub subtitle dark-text" style={{ marginBottom: '1.25rem' }}>
               NAVNEET TOPTECH is the EdTech arm of Navneet Education Limited,
               built to carry a 65+-year legacy of trusted learning into the
               digital classroom. For generations, Navneet has been a part of how
@@ -17,15 +16,13 @@ export default function White13() {
               into technology, partnering with schools to transform how they
               teach, learn, and grow.
             </p>
-            <p
-              style={{ color: 'var(--muted)', fontSize: '15px', lineHeight: '1.78', marginBottom: '1.25rem' }}>
+             <p className="sec-sub subtitle dark-text" style={{ marginBottom: '1.25rem' }}>
               What sets us apart is deep academic expertise drawn from decades
               of curriculum and content, technology built specifically for the
               realities of Indian classrooms, and lasting relationships with
               thousands of schools, all backed by the trust of the Navneet name.
             </p>
-            <p
-              style={{ color: 'var(--muted)', fontSize: '15px', lineHeight: '1.78', marginBottom: '1.5rem' }}>
+            <p className="sec-sub subtitle dark-text" style={{ marginBottom: '1.25rem' }}>
               We partner with CBSE, CBSE Pattern, and Maharashtra State Board
               schools at every stage of their journey from strengthening
               everyday classroom learning to enabling long-term institutional
@@ -74,12 +71,13 @@ export default function White13() {
           </div>
           
         </div>
-         <Link href="/contact"
-              className="btn-outline-blue"
-              
-              style={{ marginTop: '1rem' }}>
-              Talk to Us →
-            </Link>
+        <Link
+  href="/contact"
+  className="btn-gold"
+  style={{ display: "inline-block", marginTop: "2rem" }}
+>
+  Talk to Us →
+</Link>
       </section>
   );
 }

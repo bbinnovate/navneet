@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat, Inter } from "next/font/google";
+import SmoothScroll from "@/components/SmoothScroll";
 import Navbar from "@/components/Navbar";
 import GlobalInteractiveHandlers from "@/components/GlobalInteractiveHandlers";
 import { OrganizationSchema } from "@/components/schema/OrganizationSchema";
@@ -44,7 +45,9 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${inter.variable}`}>
         <GlobalInteractiveHandlers />
         <Navbar />
+           <SmoothScroll> 
         {children}
+        </SmoothScroll>
       </body>
     </html>
   );

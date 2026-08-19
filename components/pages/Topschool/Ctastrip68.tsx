@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function Ctastrip68() {
   return (
     <section className="cta-strip">
-        <h2>See TopSchool Running in a School Like Yours.</h2>
-        <p>
+        <h2 className="sec-title sec-title-wh heading" >See TopSchool Running in a School Like Yours.</h2>
+       <p className="pcard-desc subtitle dark-text">
           Book a free personalised demo — configured for your board, your
           grades, and your school's size.
         </p>

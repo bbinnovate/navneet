@@ -177,7 +177,7 @@ export default function Navbar() {
                             href={subItem.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`block rounded px-3 py-2.5 text-[12px] transition-colors hover:bg-[#eef1fa] hover:text-[#1b8a73] ${
+                            className={`block rounded px-3 py-2.5 subtitle transition-colors hover:bg-[#eef1fa] hover:text-[#1b8a73] ${
                               subItem.muted
                                 ? "text-slate-400"
                                 : "text-[#303b76]"
@@ -189,7 +189,7 @@ export default function Navbar() {
                           <Link
                             key={subItem.label}
                             href={subItem.href}
-                            className={`block rounded px-3 py-2.5 text-[12px] transition-colors hover:bg-[#eef1fa] hover:text-[#1b8a73] ${
+                            className={`block rounded px-3 py-2.5 subtitle transition-colors hover:bg-[#eef1fa] hover:text-[#1b8a73] ${
                               subItem.muted
                                 ? "pl-8 text-slate-400"
                                 : "text-[#303b76]"
@@ -204,7 +204,7 @@ export default function Navbar() {
                 ) : (
                   <Link
                     href={item.href || "#"}
-                    className="whitespace-nowrap text-[15px] font-medium text-[#172b87] transition-colors hover:text-[#1b8a73]"
+                    className="whitespace-nowrap subtitle font-medium text-[#172b87] transition-colors hover:text-[#1b8a73]"
                   >
                     {item.label}
                   </Link>
@@ -236,13 +236,13 @@ export default function Navbar() {
           >
             Support a Child ↗
           </a>
+           <div className="hero-btns">
+            <Link href="/contact" className="btn-gold" >
+              Book a Free Demo
+            </Link>
+          </div>
+  
 
-          <Link
-            href="/contact"
-            className="flex h-[52px] items-center justify-center rounded-[7px] bg-[#1054a4] px-7 text-[15px] font-bold text-white transition-all duration-200 hover:bg-[#0d478d] hover:shadow-lg"
-          >
-            Book a Free Demo
-          </Link>
         </div>
 
         {/* ================= MOBILE MENU BUTTON ================= */}
@@ -395,6 +395,7 @@ export default function Navbar() {
           </div>
 
           {/* MOBILE CTA */}
+          
           <Link
             href="/contact"
             onClick={closeMobileMenu}

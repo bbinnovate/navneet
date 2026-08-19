@@ -2,9 +2,10 @@ import Link from 'next/link';
 
 export default function HeroSection1() {
   return (
-    <section className="hero">
+    <section className="hero sec">
+      
         <div>
-          <div className="hero-eyebrow">
+          <div className="hero-eyebrow tag">
             EdTech Arm of Navneet Education Limited · Since 2008
           </div>
           <h1>
@@ -12,7 +13,7 @@ export default function HeroSection1() {
             <em style={{ color: '#f5b61f', fontStyle: 'normal' }}>School Transformation</em>
             Partner.
           </h1>
-          <p className="hero-sub">
+          <p className="hero-sub subtitle grey-text ">
             For generations, Navneet has been part of how India studies. NAVNEET
             TOPTECH carries that 65+ year legacy into the digital classroom,
             partnering with CBSE, CBSE Pattern, and Maharashtra State Board

@@ -7,11 +7,11 @@ export default function PageHeroSection1() {
         <Link href="/" >Home</Link><span>/</span><span>Products</span><span>/</span><span>TopAssess</span>
       </div>
 <div className="page-hero">
-        <div className="page-hero-tag">
+        <div className="hero-eyebrow tag">
           AI-Enabled · Formative & Summative · Online & Offline · Grades 1–10
         </div>
         <h1>AI-Enabled Assessments with Real-Time Performance Analytics.</h1>
-        <p>
+       <p className="hero-sub subtitle grey-text ">
           An assessment tool that helps teachers create, administer, and
           evaluate assessments effortlessly — with 2,00,000+ questions,
           NCERT-aligned content, customisable test blueprints, flexible paper

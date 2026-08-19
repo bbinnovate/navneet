@@ -1,59 +1,66 @@
+const platformFeatures = [
+  {
+    icon: "📝",
+    name: "Create with",
+    description:
+      "Content Builder · Assessment Builder · Questions Builder · Timetable Builder · Curriculum Planer · Lesson Planer",
+  },
+  {
+    icon: "📋",
+    name: "Manage with",
+    description:
+      "Admission Management · Fee Management · Visitor Management · Template Management",
+  },
+  {
+    icon: "📊",
+    name: "Analyse through",
+    description:
+      "Holistic Dashboard · 360° Report Card · 20+ Insightful Reports · Student Gradebook · Workload Indicator",
+  },
+  {
+    icon: "🖥️",
+    name: "Teach",
+    description:
+      "Online · Offline · Personal Resource Library — for seamless teaching in any condition",
+  },
+  {
+    icon: "📱",
+    name: "Apps for",
+    description:
+      "Management · Teachers · Students — dedicated apps for every stakeholder in the school",
+  },
+  {
+    icon: "💬",
+    name: "Communicate",
+    description:
+      "Calendar Entries · School Notice Boards · Support & Feedback Forms · Omni-channel Communication Engine",
+  },
+];
 
 export default function White24() {
   return (
     <section className="sec sec-white">
-        <p className="sec-tag">Platform Features</p>
-        <h2 className="sec-title">What TopSchool Does for Your School.</h2>
-        <div className="platform-feat-grid">
-          <div className="pfeat">
-            <div className="pfeat-icon">📝</div>
-            <div className="pfeat-name">Create with</div>
-            <div className="pfeat-desc">
-              Content Builder · Assessment Builder · Questions Builder ·
-              Timetable Builder · Curriculum Planer · Lesson Planer
+      <p className="tag green-text">Platform Features</p>
+
+      <h2 className="heading blue-text">
+        What TopSchool Does for Your School.
+      </h2>
+
+      <div className="platform-feat-grid">
+        {platformFeatures.map((feature, index) => (
+          <div className="pfeat" key={index}>
+            <div className="pfeat-icon">{feature.icon}</div>
+
+            <div className="title blue-text mb-3">
+              {feature.name}
+            </div>
+
+            <div className="subtext dark-text">
+              {feature.description}
             </div>
           </div>
-          <div className="pfeat">
-            <div className="pfeat-icon">📋</div>
-            <div className="pfeat-name">Manage with</div>
-            <div className="pfeat-desc">
-              Admission Management · Fee Management · Visitor Management ·
-              Template Management
-            </div>
-          </div>
-          <div className="pfeat">
-            <div className="pfeat-icon">📊</div>
-            <div className="pfeat-name">Analyse through</div>
-            <div className="pfeat-desc">
-              Holistic Dashboard · 360° Report Card · 20+ Insightful Reports ·
-              Student Gradebook · Workload Indicator
-            </div>
-          </div>
-          <div className="pfeat">
-            <div className="pfeat-icon">🖥️</div>
-            <div className="pfeat-name">Teach</div>
-            <div className="pfeat-desc">
-              Online · Offline · Personal Resource Library — for seamless
-              teaching in any condition
-            </div>
-          </div>
-          <div className="pfeat">
-            <div className="pfeat-icon">📱</div>
-            <div className="pfeat-name">Apps for</div>
-            <div className="pfeat-desc">
-              Management · Teachers · Students — dedicated apps for every
-              stakeholder in the school
-            </div>
-          </div>
-          <div className="pfeat">
-            <div className="pfeat-icon">💬</div>
-            <div className="pfeat-name">Communicate</div>
-            <div className="pfeat-desc">
-              Calendar Entries · School Notice Boards · Support & Feedback Forms
-              · Omni-channel Communication Engine
-            </div>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </section>
   );
 }

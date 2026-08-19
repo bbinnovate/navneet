@@ -1,19 +1,77 @@
-
 export default function Light23() {
+  const supportOffers = [
+    {
+      icon: '💻',
+      title: '1:1 Online Sessions',
+      description:
+        'Customised online sessions for teachers who need help using the platform effectively.',
+    },
+    {
+      icon: '⚡',
+      title: 'Immediate Remote Support',
+      description:
+        'Fast remote assistance so your team gets help exactly when they need it.',
+    },
+    {
+      icon: '💡',
+      title: 'Technology Strategies',
+      description:
+        'Guidance to help teachers use the technology in more innovative ways in the classroom.',
+    },
+    {
+      icon: '🔄',
+      title: 'Swift Content Updates',
+      description:
+        "Syllabus updates and new features shared quickly, so you're never working off stale content.",
+    },
+    {
+      icon: '👨‍🏫',
+      title: 'Experienced Technical Team',
+      description:
+        '65+ years of syllabus and curriculum expertise, plus 12+ years building digital content.',
+    },
+    {
+      icon: '🎓',
+      title: 'Teacher Training & Workshops',
+      description:
+        '~25 hours of training every academic year, plus workshops on classroom management and teaching strategies with certificates of completion.',
+    },
+    {
+      icon: '📊',
+      title: 'Academic Support & Progress Reports',
+      description:
+        'Year-round academic and curriculum support, plus multiple report formats to track student progress on an ongoing basis.',
+    },
+    {
+      icon: '🎉',
+      title: 'School Activity Support',
+      description:
+        'Help planning and executing activities like Science Day, carnivals, and student conferences.',
+    },
+  ];
+
   return (
     <section className="sec sec-light">
-    <p className="sec-tag">What We Offer</p>
-    <h2 className="sec-title" style={{ marginBottom: '2rem' }}>Support That Goes Beyond the Product.</h2>
-    <div className="g4">
-      <div className="fcard"><div className="fcard-icon">💻</div><div className="fcard-name">1:1 Online Sessions</div><div className="fcard-desc">Customised online sessions for teachers who need help using the platform effectively.</div></div>
-      <div className="fcard"><div className="fcard-icon">⚡</div><div className="fcard-name">Immediate Remote Support</div><div className="fcard-desc">Fast remote assistance so your team gets help exactly when they need it.</div></div>
-      <div className="fcard"><div className="fcard-icon">💡</div><div className="fcard-name">Technology Strategies</div><div className="fcard-desc">Guidance to help teachers use the technology in more innovative ways in the classroom.</div></div>
-      <div className="fcard"><div className="fcard-icon">🔄</div><div className="fcard-name">Swift Content Updates</div><div className="fcard-desc">Syllabus updates and new features shared quickly, so you're never working off stale content.</div></div>
-      <div className="fcard"><div className="fcard-icon">👨‍🏫</div><div className="fcard-name">Experienced Technical Team</div><div className="fcard-desc">65+ years of syllabus and curriculum expertise, plus 12+ years building digital content.</div></div>
-      <div className="fcard"><div className="fcard-icon">🎓</div><div className="fcard-name">Teacher Training & Workshops</div><div className="fcard-desc">~25 hours of training every academic year, plus workshops on classroom management and teaching strategies with certificates of completion.</div></div>
-      <div className="fcard"><div className="fcard-icon">📊</div><div className="fcard-name">Academic Support & Progress Reports</div><div className="fcard-desc">Year-round academic and curriculum support, plus multiple report formats to track student progress on an ongoing basis.</div></div>
-      <div className="fcard"><div className="fcard-icon">🎉</div><div className="fcard-name">School Activity Support</div><div className="fcard-desc">Help planning and executing activities like Science Day, carnivals, and student conferences.</div></div>
-    </div>
-  </section>
+      <p className="tag green-text">What We Offer</p>
+
+      <h2
+        className="heading blue-text"
+        style={{ marginBottom: '2rem' }}
+      >
+        Support That Goes Beyond the Product.
+      </h2>
+
+      <div className="g4">
+        {supportOffers.map((card, index) => (
+          <div className="fcard" key={index}>
+            <div className="fcard-icon">{card.icon}</div>
+
+            <div className="title blue-text mb-3">{card.title}</div>
+
+            <div className="subtitle dark-text">{card.description}</div>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

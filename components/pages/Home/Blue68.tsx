@@ -4,16 +4,19 @@ export default function Blue68() {
     <section className="sec sec-blue">
         <div className="sec-hrow">
           <div>
-            <p className="sec-tag sec-tag-gold">Video Library</p>
-            <h2 className="sec-title sec-title-wh">
+            <p className="tag gold-text ">Video Library</p>
+            <h2 className="sec-title sec-title-wh heading">
               See School Transformation in Action
             </h2>
-            <p className="sec-sub sec-sub-wh">
+          <p
+        className="sec-sub sec-sub-wh subtitle"
+        style={{ marginBottom: "2.5rem" }}
+      >
               Product walkthroughs, school impact stories, teacher spotlights,
               and conclave highlights.
             </p>
           </div>
-          <a className="link-more" style={{ color: 'var(--gold)' }}>View all →</a>
+          <a className="link-more">View all →</a>
         </div>
         <div className="vgrid">
           <div className="vcard">

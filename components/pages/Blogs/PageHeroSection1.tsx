@@ -7,11 +7,11 @@ export default function PageHeroSection1() {
         <Link href="/" >Home</Link><span>/</span><span>Blogs</span>
       </div>
 <div className="page-hero">
-        <div className="page-hero-tag">
+        <div className="hero-eyebrow tag">
           Insights · Education · Technology · Teaching
         </div>
         <h1>Ideas That Move Schools Forward.</h1>
-        <p>
+        <p className="hero-sub subtitle grey-text ">
           Perspectives from NAVNEET TOPTECH on school transformation, teaching
           innovation, AI in education, and the future of learning in India.
         </p>

@@ -1,4 +1,5 @@
 import PageHeroSection1 from './PageHeroSection1';
+import CTA from './CTA' ;
 import StatsBarSection2 from './StatsBarSection2';
 import Light13 from './Light13';
 import White24 from './White24';
@@ -13,6 +14,7 @@ export default function TopschoolPage() {
     <main>
       <PageHeroSection1 />
       <StatsBarSection2 />
+      <CTA/>
       <Light13 />
       <White24 />
       <Light35 />

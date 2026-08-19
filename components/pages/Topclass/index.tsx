@@ -1,4 +1,5 @@
 import PageHeroSection1 from './PageHeroSection1';
+import ProductSection from './ProductSection'
 import StatsBarSection2 from './StatsBarSection2';
 import White13 from './White13';
 import Light24 from './Light24';
@@ -10,6 +11,7 @@ export default function TopclassPage() {
   return (
     <main>
       <PageHeroSection1 />
+       <ProductSection/>
       <StatsBarSection2 />
       <White13 />
       <Light24 />

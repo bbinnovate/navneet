@@ -2,8 +2,8 @@
 export default function White35() {
   return (
     <section className="sec sec-white">
-        <p className="sec-tag">Curriculum Coverage</p>
-        <h2 className="sec-title">Full Subject Coverage for Both Boards.</h2>
+        <p className="tag green-text">Curriculum Coverage</p>
+        <h2 className="heading blue-text mb-3">Full Subject Coverage for Both Boards.</h2>
         <div className="cur-tabs">
           <div className="cur-tab active" data-cur-tab="mhsb">
             Maharashtra State Board

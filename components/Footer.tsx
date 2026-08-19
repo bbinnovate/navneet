@@ -514,7 +514,7 @@ const goPage = useCallback((page: string) => {
               <div className="pb-3">
                 <button
                   onClick={() => goPage("topschool")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   TopSchool LMS
                 </button>
@@ -528,21 +528,21 @@ const goPage = useCallback((page: string) => {
 
                 <button
                   onClick={() => goPage("topclass")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   TopClass
                 </button>
 
                 <button
                   onClick={() => goPage("topassess")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   TopAssess
                 </button>
 
                 <button
                   onClick={() => goPage("ifp")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Hardware & IFP
                 </button>
@@ -551,7 +551,7 @@ const goPage = useCallback((page: string) => {
                   href="http://nityatraining.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Nitya Training ↗
                 </a>
@@ -560,7 +560,7 @@ const goPage = useCallback((page: string) => {
                   href="http://navneetedu.ai"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-[10px] font-medium text-white/[0.88]"
+                  className="block subtitle text-white/[0.88]"
                 >
                   Navneet AI ↗
                 </a>
@@ -588,7 +588,7 @@ const goPage = useCallback((page: string) => {
               <div className="pb-3">
                 <button
                   onClick={() => goPage("about")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   About NTT
                 </button>
@@ -597,35 +597,35 @@ const goPage = useCallback((page: string) => {
                   href="https://navneet.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mb-2 block text-[10px] font-medium text-[#0f9bd7]"
+                  className="mb-2 block subtitle text-[#0f9bd7]"
                 >
                   About NEL ↗
                 </a>
 
                 <button
                   onClick={() => goPage("news")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Awards & News
                 </button>
 
                 <button
                   onClick={() => goPage("conclaves")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Events
                 </button>
 
                 <button
                   onClick={() => goPage("careers")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Careers
                 </button>
 
                 <button
                   onClick={() => goPage("blogs")}
-                  className="block text-[10px] font-medium text-white/[0.88]"
+                  className="block subtitle text-white/[0.88]"
                 >
                   Blogs
                 </button>
@@ -653,28 +653,28 @@ const goPage = useCallback((page: string) => {
               <div className="pb-3">
                 <button
                   onClick={() => goPage("conclaves")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Conclaves
                 </button>
 
                 <button
                   onClick={() => goPage("conclaves")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Expos
                 </button>
 
                 <button
                   onClick={() => goPage("conclaves")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Contests
                 </button>
 
                 <button
                   onClick={() => goPage("news")}
-                  className="block text-[10px] font-medium text-white/[0.88]"
+                  className="block subtitle text-white/[0.88]"
                 >
                   In the News
                 </button>
@@ -702,14 +702,14 @@ const goPage = useCallback((page: string) => {
               <div className="pb-3">
                 <button
                   onClick={() => goPage("contact")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Contact Us
                 </button>
 
                 <button
                   onClick={() => goPage("support")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Support & Services
                 </button>
@@ -718,14 +718,14 @@ const goPage = useCallback((page: string) => {
                   href="https://navneetfoundation.in"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Support a Child ↗
                 </a>
 
                 <button
                   onClick={() => goPage("careers")}
-                  className="mb-2 block text-[10px] font-medium text-white/[0.88]"
+                  className="mb-2 block subtitle text-white/[0.88]"
                 >
                   Careers
                 </button>

@@ -131,7 +131,7 @@ body {
       .page{display:none}.page.active{display:block}
 
       /* ── NAV ── */
-      nav{background:var(--white);display:flex;align-items:center;justify-content:space-between;padding:0 2.5rem;height:68px;position:sticky;top:0;z-index:200;box-shadow:0 2px 20px rgba(46,49,145,.08)}
+      nav{background:var(--white);align-items:center;justify-content:space-between;padding:0 2.5rem;height:68px;position:sticky;top:0;z-index:200;box-shadow:0 2px 20px rgba(46,49,145,.08)}
       .nav-logo{cursor:pointer;display:flex;align-items:center;height:44px}
       .nav-logo img{height:44px;width:auto;display:block}
       .nav-links{display:flex;list-style:none}

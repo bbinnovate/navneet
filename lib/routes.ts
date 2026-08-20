@@ -22,3 +22,7 @@ export const SITE_URL = "https://navneettoptech.com";
 export function route(key: RouteKey): string {
   return ROUTES[key];
 }
+
+export function legacyPagePath(key: string): string {
+  return ROUTES[key as RouteKey] || `/${key}`;
+}

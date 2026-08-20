@@ -10,6 +10,9 @@
     "convert": "node scripts/convert-html.mjs"
   },
   "dependencies": {
+    "firebase": "^11.0.2",
+    "firebase-admin": "^13.0.1",
+    "isomorphic-dompurify": "^3.22.0",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

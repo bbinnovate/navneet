@@ -1,12 +1,12 @@
 import PageHeroSection1 from './PageHeroSection1';
-import White12 from './White12';
+import DynamicBlogGrid from '@/components/public/DynamicBlogGrid';
 import Footer from '@/components/Footer';
 
 export default function BlogsPage() {
   return (
     <main>
       <PageHeroSection1 />
-      <White12 />
+      <DynamicBlogGrid />
       <Footer />
     </main>
   );

@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { legacyPagePath } from "@/lib/routes";
 import Image from "next/image";
 import Link from "next/link";
 

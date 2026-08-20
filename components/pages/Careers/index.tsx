@@ -2,6 +2,7 @@ import PageHeroSection1 from './PageHeroSection1';
 import StatsBarSection2 from '@/components/StatsBarSection2';
 import White13 from './White13';
 import Light24 from './Light24';
+import DynamicCareerOpenings from '@/components/public/DynamicCareerOpenings';
 import Ctastrip35 from './Ctastrip35';
 import Footer from '@/components/Footer';
 
@@ -12,6 +13,7 @@ export default function CareersPage() {
       <StatsBarSection2 />
       <White13 />
       <Light24 />
+      <DynamicCareerOpenings />
       <Ctastrip35 />
       <Footer />
     </main>

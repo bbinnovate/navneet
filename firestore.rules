@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    function admin() { return signedIn() && request.auth.token.admin == true; }
+    function isPublished() { return resource.data.status == 'published'; }
+
+    match /users/{uid} {
+      allow read: if signedIn() && (request.auth.uid == uid || admin());
+      allow create: if signedIn() && request.auth.uid == uid && request.resource.data.role == 'user';
+      allow update, delete: if admin();
+    }
+
+    match /contactEnquiries/{id} {
+      allow create: if true;
+      allow read, update, delete: if admin();
+    }
+
+    match /careerApplications/{id} {
+      allow create: if false;
+      allow read, update, delete: if admin();
+    }
+
+    match /newsCategories/{id} { allow read: if true; allow write: if admin(); }
+    match /articleCategories/{id} { allow read: if true; allow write: if admin(); }
+    match /blogCategories/{id} { allow read: if true; allow write: if admin(); }
+
+    match /news/{id} { allow read: if isPublished(); allow write: if admin(); }
+    match /articles/{id} { allow read: if isPublished(); allow write: if admin(); }
+    match /blogs/{id} { allow read: if isPublished(); allow write: if admin(); }
+    match /careers/{id} { allow read: if isPublished(); allow write: if admin(); }
+  }
+}

@@ -1,3 +1,5 @@
+import ContactForm from '@/components/public/ContactForm';
+
 export default function White12() {
   const offices = [
     {
@@ -114,122 +116,7 @@ export default function White12() {
           </div>
         </div>
 
-        <div className="form-box">
-          <h2 className="heading blue-text mb-3">Book a Free Demo</h2>
-
-         <p
-            className="subtitle dark-text" >
-            Our team will reach out within 24 hours to schedule your
-            personalised walkthrough.
-          </p>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label>Your Name</label>
-              <input
-                type="text"
-                placeholder="e.g. Priya Sharma"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>Mobile Number</label>
-              <input
-                type="tel"
-                placeholder="Your WhatsApp number"
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>School Email</label>
-            <input
-              type="email"
-              placeholder="principal@school.com"
-            />
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label>Your Role</label>
-              <select>
-                <option>Select Role</option>
-                <option>School Owner</option>
-                <option>Principal</option>
-                <option>Teacher</option>
-                <option>Coordinator</option>
-              </select>
-            </div>
-
-            <div className="form-group">
-              <label>Board</label>
-              <select>
-                <option>Select Board</option>
-                <option>CBSE</option>
-                <option>CBSE Pattern</option>
-                <option>Maharashtra State Board</option>
-                <option>Other</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="form-row">
-            <div className="form-group">
-              <label>School Name</label>
-              <input
-                type="text"
-                placeholder="Full school name"
-              />
-            </div>
-
-            <div className="form-group">
-              <label>City</label>
-              <input
-                type="text"
-                placeholder="e.g. Mumbai"
-              />
-            </div>
-          </div>
-
-          <div className="form-group">
-            <label>I'm interested in</label>
-            <select>
-              <option>Select Product</option>
-              <option>TopSchool LMS</option>
-              <option>TopClass</option>
-              <option>TopAssess</option>
-              <option>TopSeries</option>
-              <option>Hardware & IFP</option>
-              <option>All Products</option>
-            </select>
-          </div>
-
-          <div className="form-group">
-            <label>Anything else?</label>
-            <textarea
-              placeholder="Optional — number of students, current setup, goals"
-            ></textarea>
-          </div>
-
-         <div className="flex w-full gap-3">
-  <button className="btn-gold w-full">
-    Book My Free Demo →
-  </button>
-
- 
-</div>
-        <p
-            className="subtitle dark-text mb-3" 
-            style={{
-            
-              marginTop: "10px",
-              textAlign: "center",
-            }}
-          >
-            By submitting, you agree to receive communications from NAVNEET
-            TOPTECH.
-          </p>
-        </div>
+        <ContactForm />
       </div>
     </section>
   );

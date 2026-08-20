@@ -1,0 +1,1 @@
+rules_version = '2'; service firebase.storage { match /b/{bucket}/o { function admin(){return request.auth != null && request.auth.token.admin == true;} match /uploads/{allPaths=**} { allow read, write: if admin(); } } }

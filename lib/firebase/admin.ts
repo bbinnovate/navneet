@@ -5,11 +5,16 @@ import { getStorage } from 'firebase-admin/storage';
 
 if (!getApps().length) {
   try {
+    const rawPrivateKey = process.env.FIREBASE_ADMIN_PRIVATE_KEY;
+    const privateKey = rawPrivateKey
+      ? rawPrivateKey.replace(/^"(.*)"$/, '$1').replace(/\\n/g, '\n')
+      : undefined;
+
     initializeApp({
       credential: cert({
         projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
         clientEmail: process.env.FIREBASE_ADMIN_CLIENT_EMAIL,
-        privateKey: process.env.FIREBASE_ADMIN_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+        privateKey,
       }),
       storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
     });
@@ -23,3 +28,4 @@ const adminAuth = getAuth();
 const adminStorage = getStorage();
 
 export { adminDb, adminAuth, adminStorage };
+

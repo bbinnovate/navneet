@@ -2,6 +2,10 @@ import { adminDb } from '@/lib/firebase/admin';
 import { notFound } from 'next/navigation';
 import Footer from '@/components/Footer';
 
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
+
 const staticNews = [
   {
     slug: "navneet-toptech-wins-top-edtech-award-2025",

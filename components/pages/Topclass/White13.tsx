@@ -133,7 +133,7 @@ export default function White13() {
               {benefit.description}
             </p>
 
-            <ul className="check-list subtitle ">
+            <ul className="check-list blue-text subtitle ">
               {benefit.points.map((point, pointIndex) => (
                 <li key={pointIndex}>{point}</li>
               ))}

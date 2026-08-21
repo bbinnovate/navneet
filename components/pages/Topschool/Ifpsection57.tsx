@@ -53,7 +53,7 @@ export default function Ifpsection57() {
               {partner.type}
             </div>
 
-            <div className="heading white-text mb-3">
+            <div className="title white-text mb-3">
               {partner.name}
             </div>
 

@@ -6,7 +6,7 @@ export default function White13() {
        <div className="g2" style={{ gap: 'clamp(1rem, 1rem, 3.5rem)', alignItems: 'center' }}>
           <div>
              <p className="sec-tag green-text tag">Who We Are</p>
-            <h2 className="sec-title blue-text heading">Built on 65+ Years of Educational Trust.</h2>
+            <h2 className="title blue-text heading">Built on 65+ Years of Educational Trust.</h2>
             <p className="sec-sub subtitle dark-text" style={{ marginBottom: '1.25rem' }}>
               NAVNEET TOPTECH is the EdTech arm of Navneet Education Limited,
               built to carry a 65+-year legacy of trusted learning into the

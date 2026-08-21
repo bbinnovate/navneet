@@ -15,7 +15,7 @@ export default function Light35() {
               creation, instant evaluation, and performance reports that tell
               teachers exactly where each student needs support.
             </p>
-            <ul className="check-list subtitle ">
+            <ul className="check-list subtitle blue-text ">
               <li>Online and offline assessment modes</li>
               <li>Chapter-wise Challenge assessments</li>
               <li>Instant performance reports per student</li>

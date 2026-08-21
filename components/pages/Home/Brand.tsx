@@ -57,7 +57,7 @@ export default function Brand() {
       <div className="schools-strip-inner">
         <p className="tag green-text">Trusted By</p>
 
-        <h2 className=" title blue-text">4,000+ Schools Across India</h2>
+        <h2 className=" heading blue-text">4,000+ Schools Across India</h2>
 
          <p className=" subtitle dark-text">
           From Maharashtra to Karnataka — schools that have made NAVNEET

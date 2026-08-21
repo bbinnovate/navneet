@@ -55,7 +55,7 @@ export default function Light911() {
             data-faq-toggle="true"
             key={index}
           >
-            <div className="faq-q">
+            <div className="faq-q blue-text">
               {faq.question}
               <span className="faq-chev">+</span>
             </div>

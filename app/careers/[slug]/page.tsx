@@ -2,6 +2,13 @@ import { adminDb } from '@/lib/firebase/admin';
 import { notFound } from 'next/navigation';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
+import { getCareerDetailMetadata } from '@/lib/seo/dynamic';
+import type { Metadata } from 'next';
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  return getCareerDetailMetadata(slug);
+}
 
 export default async function CareerDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;

@@ -1,10 +1,12 @@
 import { adminDb } from '@/lib/firebase/admin';
 import { notFound } from 'next/navigation';
 import Footer from '@/components/Footer';
+import { isContentPublished, formatDisplayDate } from '@/lib/content/helpers';
+import { getNewsDetailMetadata } from '@/lib/seo/dynamic';
+import type { Metadata } from 'next';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
-
 
 const staticNews = [
   {
@@ -12,35 +14,43 @@ const staticNews = [
     publication: "Education World",
     category: "Education World",
     title: "NAVNEET TOPTECH Honored as Leading LMS & EdTech Provider of the Year",
-    date: "August 10, 2025",
+    date: "Aug 10, 2025",
     shortDescription: "Recognized for driving digital transformation across Indian K-12 schools with TopSchool LMS and TopClass interactive content.",
     featuredImage: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1200&q=80",
     content: "<p>NAVNEET TOPTECH has been recognized as the Leading LMS & EdTech Provider of the Year at the 8th BW Top Education Awards. The award validates the team's commitment to empowering school ecosystems through intelligent learning management software and interactive digital content.</p><p>Over the past year, NAVNEET TOPTECH has expanded its footprint across thousands of CBSE and state board schools, delivering seamless phygital solutions that connect print textbooks with dynamic digital classroom learning.</p>",
-    author: "Education World Bureau"
+    author: "Education World Bureau",
+    status: "published",
   },
   {
     slug: "future-of-phygital-education-in-indian-schools",
     publication: "Economic Times",
     category: "Economic Times",
     title: "How Navneet Toptech is Bridging the Physical and Digital Divide in Indian Classrooms",
-    date: "July 22, 2025",
+    date: "Jul 22, 2025",
     shortDescription: "An in-depth look at how blended learning tools are revolutionizing teacher workflows and student engagement.",
     featuredImage: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
     content: "<p>The integration of digital resources into conventional classroom instruction has shifted from an emergency response to a permanent pedagogical strategy. Navneet Toptech leads this transformation by harmonizing physical books with interactive smartboard lessons.</p><p>Educators report up to 40% time saved in daily lesson preparation, allowing more focused one-on-one student mentoring.</p>",
-    author: "ET Technology Desk"
+    author: "ET Technology Desk",
+    status: "published",
   },
   {
     slug: "ai-driven-personalized-learning-navneet",
     publication: "Financial Express",
     category: "Financial Express",
     title: "AI Integration in K-12 Curriculum: Navneet Toptech's Next Big Step",
-    date: "June 30, 2025",
+    date: "Jun 30, 2025",
     shortDescription: "Inside the new TopAssess diagnostic assessment tool powered by intelligent recommendation engines.",
     featuredImage: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
     content: "<p>Artificial intelligence is redefining assessment paradigms in K-12 education. Navneet Toptech's TopAssess engine generates customized learning paths and targeted remediation exercises based on real-time student response analytics.</p><p>School administrators gain comprehensive data-driven insights into institutional performance benchmarks.</p>",
-    author: "Financial Express Bureau"
+    author: "Financial Express Bureau",
+    status: "published",
   }
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  return getNewsDetailMetadata(slug);
+}
 
 export default async function NewsDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -59,13 +69,14 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
     newsItem = staticNews.find((item) => item.slug === slug) || null;
   }
 
-  if (!newsItem) {
+  // Ensure content exists and is currently published (or scheduled time has been reached)
+  if (!newsItem || !isContentPublished(newsItem)) {
     notFound();
   }
 
   const category = newsItem.category || newsItem.publication || 'News';
   const featuredImage = newsItem.featuredImage || newsItem.image || null;
-  const dateStr = newsItem.date || (newsItem.publishDate ? (newsItem.publishDate._seconds ? new Date(newsItem.publishDate._seconds * 1000).toLocaleDateString() : new Date(newsItem.publishDate).toLocaleDateString()) : (newsItem.createdAt ? new Date(newsItem.createdAt._seconds * 1000).toLocaleDateString() : ''));
+  const dateStr = formatDisplayDate(newsItem.publishDate || newsItem.scheduledDate || newsItem.createdAt, newsItem.date || '');
 
   return (
     <main>
@@ -99,12 +110,12 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
             {newsItem.title}
           </h1>
 
-          {/* 4. Date */}
+          {/* 4. Date & Author */}
           <div className="flex items-center gap-3 text-sm text-gray-500 mb-8 pb-6 border-b border-gray-200">
-            <span>{dateStr}</span>
+            {dateStr && <span>{dateStr}</span>}
             {newsItem.author && (
               <>
-                <span>•</span>
+                {dateStr && <span>•</span>}
                 <span className="font-medium text-gray-700 capitalize">{newsItem.author}</span>
               </>
             )}
@@ -127,4 +138,3 @@ export default async function NewsDetailPage({ params }: { params: Promise<{ slu
     </main>
   );
 }
-

@@ -2,17 +2,9 @@ import { NextResponse } from 'next/server';
 import { adminDb } from '@/lib/firebase/admin';
 import { FieldValue } from 'firebase-admin/firestore';
 
-// This endpoint should be triggered by a Cron Job (e.g., Vercel Cron, GitHub Actions, etc.)
+// This endpoint can be triggered by a Cron Job (e.g., Vercel Cron, GitHub Actions, Cloud Scheduler, etc.)
 // GET /api/cron/publish
 export async function GET(request: Request) {
-  // In production, you would add an authorization header check here to verify the request comes from your cron service
-  /*
-  const authHeader = request.headers.get('authorization');
-  if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
-    return new NextResponse('Unauthorized', { status: 401 });
-  }
-  */
-
   const collectionsToPublish = ['news', 'articles', 'blogs', 'careers'];
   let publishedCount = 0;
 
@@ -28,10 +20,11 @@ export async function GET(request: Request) {
       if (!snapshot.empty) {
         const batch = adminDb.batch();
         
-        snapshot.forEach((doc) => {
-          batch.update(doc.ref, {
+        snapshot.forEach((docSnap) => {
+          const data = docSnap.data();
+          batch.update(docSnap.ref, {
             status: 'published',
-            publishDate: FieldValue.serverTimestamp(),
+            publishDate: data.scheduledDate || FieldValue.serverTimestamp(),
             updatedAt: FieldValue.serverTimestamp(),
           });
           publishedCount++;
@@ -43,7 +36,8 @@ export async function GET(request: Request) {
 
     return NextResponse.json({ 
       success: true, 
-      message: `Successfully published ${publishedCount} scheduled items.` 
+      message: `Successfully processed ${publishedCount} scheduled items.`,
+      timestamp: now.toISOString()
     });
   } catch (error: any) {
     console.error('Scheduled publish error:', error);

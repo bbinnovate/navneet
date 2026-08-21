@@ -159,7 +159,7 @@ export default function Navbar() {
                     {/* MAIN NAV ITEM */}
                     <button
                       type="button"
-                      className="flex items-center gap-1.5 whitespace-nowrap border-0 bg-transparent py-7 subtitle text-[#172b87] transition-colors duration-200 hover:text-[#1b8a73]"
+                      className="flex items-center gap-1.5 whitespace-nowrap border-0 bg-transparent py-7 subtitle blue-text transition-colors duration-200 hover:text-[#1b8a73]"
                     >
                       {item.label}
 
@@ -177,7 +177,7 @@ export default function Navbar() {
                             href={subItem.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className={`block rounded px-3 py-2.5 subtitle transition-colors hover:bg-[#eef1fa] hover:text-[#1b8a73] ${
+                            className={`block rounded px-3 py-2.5 subtitle transition-colors blue-text hover:bg-[#eef1fa] hover:text-[#1b8a73] ${
                               subItem.muted
                                 ? "text-slate-400"
                                 : "text-[#303b76]"

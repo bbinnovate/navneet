@@ -18,6 +18,7 @@ import {
   PlusCircle,
   List,
   Tags,
+  Globe,
 } from 'lucide-react';
 
 const navigation = [
@@ -44,7 +45,7 @@ const navigation = [
       },
       {
         name: 'Categories',
-        href: '/admin/news?view=categories',
+        href: '/admin/news/categories',
         icon: Tags,
       },
     ],
@@ -67,7 +68,7 @@ const navigation = [
       },
       {
         name: 'Categories',
-        href: '/admin/articles?view=categories',
+        href: '/admin/articles/categories',
         icon: Tags,
       },
     ],
@@ -90,7 +91,7 @@ const navigation = [
       },
       {
         name: 'Categories',
-        href: '/admin/blogs?view=categories',
+        href: '/admin/blogs/categories',
         icon: Tags,
       },
     ],
@@ -112,6 +113,12 @@ const navigation = [
         icon: PlusCircle,
       },
     ],
+  },
+
+  {
+    name: 'Page SEO',
+    href: '/admin/seo',
+    icon: Globe,
   },
 
   {
@@ -291,7 +298,7 @@ export default function Sidebar({
                             (isListPage &&
                               pathname === item.basePath) ||
                             (isCategoryPage &&
-                              searchParams.get('view') === 'categories');
+                              (pathname.includes('/categories') || searchParams.get('view') === 'categories'));
 
                           return (
                             <Link

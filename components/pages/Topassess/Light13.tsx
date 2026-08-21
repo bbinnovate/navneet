@@ -4,12 +4,12 @@ export default function Light13() {
     <section className="sec sec-light">
         <div className="g2" style={{ gap: '3rem', alignItems: 'center' }}>
           <div>
-            <div className="hero-eyebrow tag">
+            <div className="hero-eyebrow tag ">
          AI-Enabled Assessment
         </div>
            
             <h2 className="heading blue-text mb-3">Tests That Match How You Teach.</h2>
-            <p className="subtitle dark-textmb-3 "
+            <p className="subtitle dark-text mb-3 "
              >
               TopAssess is an AI-enabled school assessment platform that helps
               teachers create, administer, and evaluate tests efficiently. It
@@ -17,7 +17,7 @@ export default function Light13() {
               high-quality, curriculum-aligned question papers and insightful
               performance reports for students and teachers.
             </p>
-            <p className="subtitle drak-text mb-3 mt-1">
+            <p className="subtitle blue-text mb-3 mt-1">
                Available in online and offline modes.
             </p>
             <ul className="check-list subtitle blue-text">

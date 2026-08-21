@@ -1,30 +1,37 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { Home } from "lucide-react";
 
-const Pagenotfound = () => {
-  const router = useRouter();
-
+export default function Pagenotfound() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center text-center px-4">
-      
-      <h1 className="mb-4">
-        Oops! Wrong Page
+    <div className="flex min-h-[60vh] flex-col items-center justify-center text-center px-4 py-16">
+      <div className="inline-block mb-4">
+        <span className="tag green-text px-4 py-1.5 bg-[rgba(27,138,115,0.1)] rounded-full text-xs font-bold uppercase tracking-wider">
+          Error 404
+        </span>
+      </div>
+
+      <div className="font-extrabold text-7xl sm:text-8xl text-[#0A4B9B] tracking-tight font-montserrat opacity-90 mb-2">
+        4<span className="text-[#1b8a73]">0</span>4
+      </div>
+
+      <h1 className="heading blue-text text-2xl sm:text-3xl font-bold mb-3">
+        Page Not Found
       </h1>
 
-      <p className="mb-8">
-        You are at the wrong page. Let me take you to the right one.
+      <p className="subtitle text-[#5a5f8a] max-w-md mx-auto mb-8 text-sm sm:text-base leading-relaxed">
+        The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
       </p>
 
-      <button
-        onClick={() => router.push("/")}
-        className="px-6 py-3 bg-black text-white rounded-full hover:opacity-80 transition"
+      <Link
+        href="/"
+        className="btn-gold flex items-center justify-center gap-2"
+        style={{ padding: '12px 28px', fontSize: '15px' }}
       >
-        Go to Home
-      </button>
-
+        <Home className="w-4 h-4" />
+        Return to Homepage
+      </Link>
     </div>
   );
 }
-
-export default Pagenotfound

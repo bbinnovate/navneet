@@ -90,7 +90,7 @@ export default function Aisection57() {
 
       <div className="ai-cta-bar">
         <div>
-          <h3 className="ifp-name white-text title ">Ready to make your school AI-ready?</h3>
+          <h2 className=" white-text heading ">Ready to make your school AI-ready?</h2>
           <p  className="ifp-desc grey-text subtitle">
             Our team will show you what AI looks like inside your school.
           </p>

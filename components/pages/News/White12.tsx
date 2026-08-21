@@ -1,4 +1,5 @@
 import { adminDb } from '@/lib/firebase/admin';
+import { isContentPublished, parseTimestampToMs, formatDisplayDate } from '@/lib/content/helpers';
 
 const awards = [
   {
@@ -20,25 +21,21 @@ const awards = [
 ];
 
 export default async function White12() {
-  // Fetch published news from Firestore Server-side
+  // Fetch published/scheduled news from Firestore Server-side
   let pressCoverage: any[] = [];
   try {
     const snapshot = await adminDb.collection('news')
-      .where('status', '==', 'published')
+      .where('status', 'in', ['published', 'scheduled'])
       .get();
       
-    let rawNews = snapshot.docs.map(doc => {
-      const data = doc.data() as any;
-      return {
-        ...data,
-        id: doc.id
-      };
-    });
+    let rawNews = snapshot.docs
+      .map(doc => ({ ...doc.data(), id: doc.id } as any))
+      .filter(isContentPublished);
     
-    // Sort in memory to avoid needing a Firestore composite index
+    // Sort in memory (newest publish/scheduled/created date first)
     rawNews.sort((a: any, b: any) => {
-      const dateA = a.publishDate ? (a.publishDate.seconds || a.publishDate._seconds) : 0;
-      const dateB = b.publishDate ? (b.publishDate.seconds || b.publishDate._seconds) : 0;
+      const dateA = parseTimestampToMs(a.publishDate || a.scheduledDate || a.createdAt) || 0;
+      const dateB = parseTimestampToMs(b.publishDate || b.scheduledDate || b.createdAt) || 0;
       return dateB - dateA;
     });
     
@@ -48,12 +45,12 @@ export default async function White12() {
         slug: data.slug || '',
         title: data.title || '',
         publication: data.author || data.category || 'News',
-        date: data.publishDate ? new Date((data.publishDate.seconds || data.publishDate._seconds) * 1000).toLocaleDateString() : (data.createdAt ? new Date((data.createdAt.seconds || data.createdAt._seconds) * 1000).toLocaleDateString() : ''),
+        date: formatDisplayDate(data.publishDate || data.scheduledDate || data.createdAt),
         image: data.featuredImage || null,
         shortDescription: data.shortDescription || '',
         content: data.content || '',
         author: data.author || '',
-        category: data.category || ''
+        category: data.category || 'News'
       };
     });
     
@@ -70,47 +67,46 @@ export default async function White12() {
         slug: "navneet-toptech-wins-top-edtech-award-2025",
         publication: "Education World",
         title: "NAVNEET TOPTECH Honored as Leading LMS & EdTech Provider of the Year",
-        date: "August 10, 2025",
+        date: "Aug 10, 2025",
         shortDescription: "Recognized for driving digital transformation across Indian K-12 schools with TopSchool LMS and TopClass interactive content.",
-        author: "Education World Bureau"
+        author: "Education World Bureau",
+        category: "Awards"
       },
       {
         slug: "future-of-phygital-education-in-indian-schools",
         publication: "Economic Times",
         title: "How Navneet Toptech is Bridging the Physical and Digital Divide in Indian Classrooms",
-        date: "July 22, 2025",
+        date: "Jul 22, 2025",
         shortDescription: "An in-depth look at how blended learning tools are revolutionizing teacher workflows and student engagement.",
-        author: "ET Technology Desk"
+        author: "ET Technology Desk",
+        category: "Media Coverage"
       },
       {
         slug: "ai-driven-personalized-learning-navneet",
         publication: "Financial Express",
         title: "AI Integration in K-12 Curriculum: Navneet Toptech's Next Big Step",
-        date: "June 30, 2025",
+        date: "Jun 30, 2025",
         shortDescription: "Inside the new TopAssess diagnostic assessment tool powered by intelligent recommendation engines.",
-        author: "Financial Express Bureau"
+        author: "Financial Express Bureau",
+        category: "Industry News"
       }
     ];
   }
 
-  // Fetch published articles from Firestore Server-side
+  // Fetch published/scheduled articles from Firestore Server-side
   let articlesData: any[] = [];
   try {
     const articlesSnapshot = await adminDb.collection('articles')
-      .where('status', '==', 'published')
+      .where('status', 'in', ['published', 'scheduled'])
       .get();
 
-    let rawArticles = articlesSnapshot.docs.map(doc => {
-      const data = doc.data() as any;
-      return {
-        ...data,
-        id: doc.id
-      };
-    });
+    let rawArticles = articlesSnapshot.docs
+      .map(doc => ({ ...doc.data(), id: doc.id } as any))
+      .filter(isContentPublished);
 
     rawArticles.sort((a: any, b: any) => {
-      const dateA = a.publishDate ? (a.publishDate.seconds || a.publishDate._seconds) : 0;
-      const dateB = b.publishDate ? (b.publishDate.seconds || b.publishDate._seconds) : 0;
+      const dateA = parseTimestampToMs(a.publishDate || a.scheduledDate || a.createdAt) || 0;
+      const dateB = parseTimestampToMs(b.publishDate || b.scheduledDate || b.createdAt) || 0;
       return dateB - dateA;
     });
 
@@ -120,7 +116,7 @@ export default async function White12() {
         slug: data.slug || '',
         title: data.title || '',
         category: data.category || 'Article',
-        date: data.publishDate ? new Date((data.publishDate.seconds || data.publishDate._seconds) * 1000).toLocaleDateString() : (data.createdAt ? new Date((data.createdAt.seconds || data.createdAt._seconds) * 1000).toLocaleDateString() : ''),
+        date: formatDisplayDate(data.publishDate || data.scheduledDate || data.createdAt),
         image: data.featuredImage || null,
         shortDescription: data.shortDescription || '',
         content: data.content || '',
@@ -138,7 +134,7 @@ export default async function White12() {
         slug: "transforming-k12-education-with-ai-tools",
         category: "EdTech Innovation",
         title: "Transforming K-12 Classrooms with Next-Gen AI Learning Platforms",
-        date: "August 15, 2025",
+        date: "Aug 15, 2025",
         shortDescription: "Exploring how personalized AI learning pathways are improving student retention and teacher productivity in schools across India.",
         image: null,
         author: "Navneet Toptech Research Team"
@@ -147,7 +143,7 @@ export default async function White12() {
         slug: "future-of-hybrid-classrooms-in-india",
         category: "Future of Learning",
         title: "The Rise of Hybrid Classrooms: Integrating Physical Books with Digital Content",
-        date: "July 28, 2025",
+        date: "Jul 28, 2025",
         shortDescription: "How phygital education ecosystems connect traditional print textbooks with interactive digital assessments.",
         image: null,
         author: "Academic Advisory Board"
@@ -156,7 +152,7 @@ export default async function White12() {
         slug: "empowering-teachers-digital-skills-2025",
         category: "Teacher Empowerment",
         title: "Empowering Educators: Best Practices for Digital Pedagogy and LMS Adoption",
-        date: "July 10, 2025",
+        date: "Jul 10, 2025",
         shortDescription: "A comprehensive guide for school leaders on training teachers to effectively leverage interactive whiteboards and LMS tools.",
         image: null,
         author: "Navneet Toptech Academy"
@@ -166,6 +162,59 @@ export default async function White12() {
 
   return (
     <section className="sec sec-white">
+
+       {/* Awards & Recognition Section */}
+      <p className="tag green-text">Awards & Recognition</p>
+
+      <h2 className="sec-title heading blue-text">
+        Recognition That Validates the Work.
+      </h2>
+
+      <div
+        className="g4"
+        style={{ marginTop: "1.5rem", marginBottom: "3.5rem" }}
+      >
+        {awards.map((award, index) => (
+          <div
+            key={index}
+            style={{
+              background: "var(--light)",
+              borderRadius: "12px",
+              padding: "1.25rem",
+              border: "1px solid var(--border)",
+              textAlign: "center",
+            }}
+          >
+            <div
+              style={{
+                background: "var(--white)",
+                borderRadius: "10px",
+                border: "1.5px dashed var(--border)",
+                aspectRatio: "1",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                marginBottom: "10px",
+                fontSize: "11px",
+                fontWeight: "700",
+                fontFamily: "var(--fh)",
+                color: "var(--muted)",
+              }}
+            >
+              Award Logo
+            </div>
+
+            <div className="title blue-text" style={{ marginBottom: "4px" }}>
+              {award.title}
+            </div>
+
+            <div className="subtitle dark-text">
+              {award.organization}
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* Press Coverage Section */}
       <p className="tag green-text">Press Coverage</p>
 
@@ -176,7 +225,7 @@ export default async function White12() {
       <div className="g3" style={{ marginTop: "1.5rem", marginBottom: "3.5rem" }}>
         {pressCoverage.map((press, index) => (
           <div
-            key={index}
+            key={press.id || press.slug || index}
             style={{
               borderRadius: "14px",
               overflow: "hidden",
@@ -235,7 +284,7 @@ export default async function White12() {
                   alignSelf: "flex-start",
                 }}
               >
-                {press.publication}
+                {press.category || press.publication}
               </div>
 
               <div className="title blue-text" style={{ marginBottom: "8px", flex: 1 }}>
@@ -247,7 +296,7 @@ export default async function White12() {
               </div>
 
               {press.shortDescription && (
-                <p className="subtitle dark-text" style={{ fontSize: "13px", marginBottom: "10px", color: "var(--muted)", display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
+                <p className="subtitle dark-text" style={{  marginBottom: "10px",  display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden" }}>
                   {press.shortDescription}
                 </p>
               )}
@@ -265,57 +314,7 @@ export default async function White12() {
         ))}
       </div>
 
-      {/* Awards & Recognition Section */}
-      <p className="tag green-text">Awards & Recognition</p>
-
-      <h2 className="sec-title heading blue-text">
-        Recognition That Validates the Work.
-      </h2>
-
-      <div
-        className="g4"
-        style={{ marginTop: "1.5rem", marginBottom: "3.5rem" }}
-      >
-        {awards.map((award, index) => (
-          <div
-            key={index}
-            style={{
-              background: "var(--light)",
-              borderRadius: "12px",
-              padding: "1.25rem",
-              border: "1px solid var(--border)",
-              textAlign: "center",
-            }}
-          >
-            <div
-              style={{
-                background: "var(--white)",
-                borderRadius: "10px",
-                border: "1.5px dashed var(--border)",
-                aspectRatio: "1",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                marginBottom: "10px",
-                fontSize: "11px",
-                fontWeight: "700",
-                fontFamily: "var(--fh)",
-                color: "var(--muted)",
-              }}
-            >
-              Award Logo
-            </div>
-
-            <div className="title blue-text" style={{ marginBottom: "4px" }}>
-              {award.title}
-            </div>
-
-            <div className="subtitle dark-text">
-              {award.organization}
-            </div>
-          </div>
-        ))}
-      </div>
+     
 
       {/* Articles Section - Directly Below Awards & Recognition */}
       <p className="tag green-text">Articles & Insights</p>
@@ -324,9 +323,6 @@ export default async function White12() {
         <h2 className="sec-title heading blue-text" style={{ margin: 0 }}>
           In-Depth Articles & Thought Leadership.
         </h2>
-        {/* <a href="/articles" className="link-more">
-          View All Articles →
-        </a> */}
       </div>
 
       <div className="g3" style={{ marginTop: "1.5rem" }}>
@@ -397,7 +393,7 @@ export default async function White12() {
 
               <div className="title blue-text" style={{ marginBottom: "8px", flex: 1 }}>
                 {article.slug ? (
-                  <a >{article.title}</a>
+                  <a href={`/articles/${article.slug}`} className="hover:underline">{article.title}</a>
                 ) : (
                   article.title
                 )}
@@ -421,6 +417,7 @@ export default async function White12() {
           </div>
         ))}
       </div>
+      
     </section>
   );
 }

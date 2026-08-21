@@ -55,7 +55,7 @@ export default function White68() {
             className={`faq-item ${index === 0 ? "open" : ""}`}
             data-faq-toggle="true"
           >
-            <div className="faq-q">
+            <div className="faq-q blue-text">
               {faq.question}
               <span className="faq-chev">+</span>
             </div>

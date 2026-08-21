@@ -1,43 +1,53 @@
 import { adminDb } from '@/lib/firebase/admin';
 import { notFound } from 'next/navigation';
 import Footer from '@/components/Footer';
+import { isContentPublished, formatDisplayDate } from '@/lib/content/helpers';
+import { getArticleDetailMetadata } from '@/lib/seo/dynamic';
+import type { Metadata } from 'next';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
-
 
 const staticArticles = [
   {
     slug: "transforming-k12-education-with-ai-tools",
     category: "EdTech Innovation",
     title: "Transforming K-12 Classrooms with Next-Gen AI Learning Platforms",
-    date: "August 15, 2025",
+    date: "Aug 15, 2025",
     shortDescription: "Exploring how personalized AI learning pathways are improving student retention and teacher productivity in schools across India.",
     featuredImage: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&w=1200&q=80",
     content: "<p>Artificial Intelligence is no longer just a buzzword in education; it is actively reshaping classroom dynamics across K-12 schools. By leveraging smart diagnostic tools and personalized content recommendations, educators can address diverse learning speeds effectively.</p><p>With automated grading and real-time skill gaps analysis, teachers spend less time on routine administrative work and more time on high-impact instructional engagement.</p>",
-    author: "Navneet Toptech Research Team"
+    author: "Navneet Toptech Research Team",
+    status: "published",
   },
   {
     slug: "future-of-hybrid-classrooms-in-india",
     category: "Future of Learning",
     title: "The Rise of Hybrid Classrooms: Integrating Physical Books with Digital Content",
-    date: "July 28, 2025",
+    date: "Jul 28, 2025",
     shortDescription: "How phygital education ecosystems connect traditional print textbooks with interactive digital assessments.",
     featuredImage: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=80",
     content: "<p>Phygital education creates a harmonious bridge between tangible physical textbooks and interactive digital experiences. Students interact with physical workbooks while accessing augmented digital visual guides, simulations, and interactive quizzes.</p><p>This dual approach reinforces conceptual understanding while retaining tactile writing habits essential for foundational cognitive development.</p>",
-    author: "Academic Advisory Board"
+    author: "Academic Advisory Board",
+    status: "published",
   },
   {
     slug: "empowering-teachers-digital-skills-2025",
     category: "Teacher Empowerment",
     title: "Empowering Educators: Best Practices for Digital Pedagogy and LMS Adoption",
-    date: "July 10, 2025",
+    date: "Jul 10, 2025",
     shortDescription: "A comprehensive guide for school leaders on training teachers to effectively leverage interactive whiteboards and LMS tools.",
     featuredImage: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80",
     content: "<p>Empowering teachers with digital capabilities is critical for the success of any educational technology initiative. Structured professional development programs, peer mentoring, and intuitive tool interfaces are key drivers for high adoption rates.</p><p>Schools that prioritize continuous teacher enablement observe significantly higher student engagement and improved academic outcomes.</p>",
-    author: "Navneet Toptech Academy"
+    author: "Navneet Toptech Academy",
+    status: "published",
   }
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  return getArticleDetailMetadata(slug);
+}
 
 export default async function ArticleDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -56,13 +66,14 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
     articleItem = staticArticles.find((item) => item.slug === slug) || null;
   }
 
-  if (!articleItem) {
+  // Ensure content exists and is currently published (or scheduled time has been reached)
+  if (!articleItem || !isContentPublished(articleItem)) {
     notFound();
   }
 
   const category = articleItem.category || 'Article';
   const featuredImage = articleItem.featuredImage || articleItem.image || null;
-  const dateStr = articleItem.date || (articleItem.publishDate ? (articleItem.publishDate._seconds ? new Date(articleItem.publishDate._seconds * 1000).toLocaleDateString() : new Date(articleItem.publishDate).toLocaleDateString()) : (articleItem.createdAt ? new Date(articleItem.createdAt._seconds * 1000).toLocaleDateString() : ''));
+  const dateStr = formatDisplayDate(articleItem.publishDate || articleItem.scheduledDate || articleItem.createdAt, articleItem.date || '');
 
   return (
     <main>
@@ -96,12 +107,12 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
             {articleItem.title}
           </h1>
 
-          {/* 4. Date */}
+          {/* 4. Date & Author */}
           <div className="flex items-center gap-3 text-sm text-gray-500 mb-8 pb-6 border-b border-gray-200">
-            <span>{dateStr}</span>
+            {dateStr && <span>{dateStr}</span>}
             {articleItem.author && (
               <>
-                <span>•</span>
+                {dateStr && <span>•</span>}
                 <span className="font-medium text-gray-700 capitalize">{articleItem.author}</span>
               </>
             )}
@@ -124,4 +135,3 @@ export default async function ArticleDetailPage({ params }: { params: Promise<{ 
     </main>
   );
 }
-
